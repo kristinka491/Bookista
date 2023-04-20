@@ -8,17 +8,118 @@
 
 /* Begin PBXBuildFile section */
 		3EB6B51429ED49CB00CBFD0D /* BookistaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B51329ED49CB00CBFD0D /* BookistaApp.swift */; };
-		3EB6B51629ED49CB00CBFD0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B51529ED49CB00CBFD0D /* ContentView.swift */; };
 		3EB6B51829ED49CC00CBFD0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6B51729ED49CC00CBFD0D /* Assets.xcassets */; };
 		3EB6B51B29ED49CC00CBFD0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6B51A29ED49CC00CBFD0D /* Preview Assets.xcassets */; };
+		3EB6B52D29ED4BB800CBFD0D /* GreetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B52C29ED4BB800CBFD0D /* GreetingView.swift */; };
+		3EB6B53329ED4C3600CBFD0D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B53229ED4C3600CBFD0D /* LoginView.swift */; };
+		3EB6B53529ED4C4100CBFD0D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B53429ED4C4100CBFD0D /* LoginViewModel.swift */; };
+		3EB6B53729ED4C4F00CBFD0D /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B53629ED4C4F00CBFD0D /* SignUpView.swift */; };
+		3EB6B53929ED4C5900CBFD0D /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B53829ED4C5900CBFD0D /* SignUpViewModel.swift */; };
+		3EB6B53C29ED4C9800CBFD0D /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B53B29ED4C9800CBFD0D /* StringConstants.swift */; };
+		3EB6B53E29ED4CA900CBFD0D /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B53D29ED4CA900CBFD0D /* DataError.swift */; };
+		3EB6B54229ED4CE200CBFD0D /* RealmDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B54129ED4CE200CBFD0D /* RealmDataStore.swift */; };
+		3EB6B54429ED4CF300CBFD0D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B54329ED4CF300CBFD0D /* NetworkManager.swift */; };
+		3EB6B55529EE84D100CBFD0D /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6B54829EE84D100CBFD0D /* Roboto-Medium.ttf */; };
+		3EB6B55629EE84D100CBFD0D /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6B54929EE84D100CBFD0D /* Roboto-Light.ttf */; };
+		3EB6B55729EE84D100CBFD0D /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6B54A29EE84D100CBFD0D /* Roboto-Regular.ttf */; };
+		3EB6B55829EE84D100CBFD0D /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6B54B29EE84D100CBFD0D /* Roboto-MediumItalic.ttf */; };
+		3EB6B55929EE84D100CBFD0D /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6B54C29EE84D100CBFD0D /* Roboto-ThinItalic.ttf */; };
+		3EB6B55A29EE84D100CBFD0D /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6B54D29EE84D100CBFD0D /* Roboto-BoldItalic.ttf */; };
+		3EB6B55B29EE84D100CBFD0D /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6B54E29EE84D100CBFD0D /* Roboto-LightItalic.ttf */; };
+		3EB6B55C29EE84D100CBFD0D /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6B54F29EE84D100CBFD0D /* Roboto-Italic.ttf */; };
+		3EB6B55E29EE84D100CBFD0D /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6B55129EE84D100CBFD0D /* Roboto-BlackItalic.ttf */; };
+		3EB6B55F29EE84D100CBFD0D /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6B55229EE84D100CBFD0D /* Roboto-Bold.ttf */; };
+		3EB6B56029EE84D100CBFD0D /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6B55329EE84D100CBFD0D /* Roboto-Thin.ttf */; };
+		3EB6B56129EE84D100CBFD0D /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6B55429EE84D100CBFD0D /* Roboto-Black.ttf */; };
+		3EB6B5D629EE84FA00CBFD0D /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6B5C329EE84FA00CBFD0D /* Poppins-Regular.ttf */; };
+		3EB6B5D729EE84FA00CBFD0D /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6B5C429EE84FA00CBFD0D /* Poppins-LightItalic.ttf */; };
+		3EB6B5D829EE84FA00CBFD0D /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6B5C529EE84FA00CBFD0D /* Poppins-Bold.ttf */; };
+		3EB6B5D929EE84FA00CBFD0D /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6B5C629EE84FA00CBFD0D /* Poppins-Black.ttf */; };
+		3EB6B5DA29EE84FA00CBFD0D /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6B5C729EE84FA00CBFD0D /* Poppins-Thin.ttf */; };
+		3EB6B5DB29EE84FA00CBFD0D /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6B5C829EE84FA00CBFD0D /* Poppins-SemiBold.ttf */; };
+		3EB6B5DC29EE84FA00CBFD0D /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6B5C929EE84FA00CBFD0D /* Poppins-Italic.ttf */; };
+		3EB6B5DD29EE84FA00CBFD0D /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6B5CA29EE84FA00CBFD0D /* Poppins-MediumItalic.ttf */; };
+		3EB6B5F429EE850000CBFD0D /* NunitoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6B5E529EE850000CBFD0D /* NunitoSans-Regular.ttf */; };
+		3EB6B5F829EE850000CBFD0D /* NunitoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6B5E929EE850000CBFD0D /* NunitoSans-Bold.ttf */; };
+		3EB6B60029EE8AF700CBFD0D /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B5FF29EE8AF700CBFD0D /* UIFont+Extension.swift */; };
+		3EB6B60329EE8CB300CBFD0D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B60229EE8CB300CBFD0D /* UIColor+Extension.swift */; };
+		3EB6B60629EFF20D00CBFD0D /* AuthorizationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B60529EFF20D00CBFD0D /* AuthorizationTextField.swift */; };
+		3EB6B60829EFF22500CBFD0D /* SecureAuthorizationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B60729EFF22500CBFD0D /* SecureAuthorizationTextField.swift */; };
+		3EB6B60A29EFF24800CBFD0D /* TogglePasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B60929EFF24800CBFD0D /* TogglePasswordTextField.swift */; };
+		3EB6B60C29F1215500CBFD0D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B60B29F1215500CBFD0D /* User.swift */; };
+		3EB6B60F29F131B500CBFD0D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B60E29F131B500CBFD0D /* HomeView.swift */; };
+		DB17D8E91FCA30A902B6F1D1 /* Pods_Bookista.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DC825E78B7374A0C4C527F /* Pods_Bookista.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D18B1F7974C033D62A87347 /* Pods-Bookista.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bookista.release.xcconfig"; path = "Target Support Files/Pods-Bookista/Pods-Bookista.release.xcconfig"; sourceTree = "<group>"; };
 		3EB6B51029ED49CB00CBFD0D /* Bookista.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookista.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EB6B51329ED49CB00CBFD0D /* BookistaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookistaApp.swift; sourceTree = "<group>"; };
-		3EB6B51529ED49CB00CBFD0D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3EB6B51729ED49CC00CBFD0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EB6B51A29ED49CC00CBFD0D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3EB6B52C29ED4BB800CBFD0D /* GreetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingView.swift; sourceTree = "<group>"; };
+		3EB6B53229ED4C3600CBFD0D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3EB6B53429ED4C4100CBFD0D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		3EB6B53629ED4C4F00CBFD0D /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		3EB6B53829ED4C5900CBFD0D /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		3EB6B53B29ED4C9800CBFD0D /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
+		3EB6B53D29ED4CA900CBFD0D /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
+		3EB6B54129ED4CE200CBFD0D /* RealmDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDataStore.swift; sourceTree = "<group>"; };
+		3EB6B54329ED4CF300CBFD0D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3EB6B54829EE84D100CBFD0D /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		3EB6B54929EE84D100CBFD0D /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		3EB6B54A29EE84D100CBFD0D /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		3EB6B54B29EE84D100CBFD0D /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		3EB6B54C29EE84D100CBFD0D /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		3EB6B54D29EE84D100CBFD0D /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		3EB6B54E29EE84D100CBFD0D /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		3EB6B54F29EE84D100CBFD0D /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		3EB6B55129EE84D100CBFD0D /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		3EB6B55229EE84D100CBFD0D /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		3EB6B55329EE84D100CBFD0D /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		3EB6B55429EE84D100CBFD0D /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		3EB6B5B829EE84FA00CBFD0D /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		3EB6B5B929EE84FA00CBFD0D /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		3EB6B5BA29EE84FA00CBFD0D /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		3EB6B5BB29EE84FA00CBFD0D /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		3EB6B5BC29EE84FA00CBFD0D /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		3EB6B5BD29EE84FA00CBFD0D /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		3EB6B5BE29EE84FA00CBFD0D /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		3EB6B5BF29EE84FA00CBFD0D /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		3EB6B5C029EE84FA00CBFD0D /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		3EB6B5C129EE84FA00CBFD0D /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		3EB6B5C329EE84FA00CBFD0D /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		3EB6B5C429EE84FA00CBFD0D /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		3EB6B5C529EE84FA00CBFD0D /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		3EB6B5C629EE84FA00CBFD0D /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		3EB6B5C729EE84FA00CBFD0D /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		3EB6B5C829EE84FA00CBFD0D /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		3EB6B5C929EE84FA00CBFD0D /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		3EB6B5CA29EE84FA00CBFD0D /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		3EB6B5DF29EE850000CBFD0D /* NunitoSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		3EB6B5E029EE850000CBFD0D /* NunitoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		3EB6B5E129EE850000CBFD0D /* NunitoSans-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraLight.ttf"; sourceTree = "<group>"; };
+		3EB6B5E229EE850000CBFD0D /* NunitoSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Light.ttf"; sourceTree = "<group>"; };
+		3EB6B5E329EE850000CBFD0D /* NunitoSans-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-BlackItalic.ttf"; sourceTree = "<group>"; };
+		3EB6B5E429EE850000CBFD0D /* NunitoSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		3EB6B5E529EE850000CBFD0D /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Regular.ttf"; sourceTree = "<group>"; };
+		3EB6B5E629EE850000CBFD0D /* NunitoSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		3EB6B5E729EE850000CBFD0D /* NunitoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Italic.ttf"; sourceTree = "<group>"; };
+		3EB6B5E929EE850000CBFD0D /* NunitoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Bold.ttf"; sourceTree = "<group>"; };
+		3EB6B5EA29EE850000CBFD0D /* NunitoSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		3EB6B5EB29EE850000CBFD0D /* NunitoSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-Black.ttf"; sourceTree = "<group>"; };
+		3EB6B5EC29EE850000CBFD0D /* NunitoSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		3EB6B5ED29EE850000CBFD0D /* NunitoSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NunitoSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		3EB6B5FD29EE85CE00CBFD0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EB6B5FF29EE8AF700CBFD0D /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		3EB6B60229EE8CB300CBFD0D /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		3EB6B60529EFF20D00CBFD0D /* AuthorizationTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationTextField.swift; sourceTree = "<group>"; };
+		3EB6B60729EFF22500CBFD0D /* SecureAuthorizationTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureAuthorizationTextField.swift; sourceTree = "<group>"; };
+		3EB6B60929EFF24800CBFD0D /* TogglePasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglePasswordTextField.swift; sourceTree = "<group>"; };
+		3EB6B60B29F1215500CBFD0D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3EB6B60E29F131B500CBFD0D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D0DC825E78B7374A0C4C527F /* Pods_Bookista.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bookista.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB2B70657729C4F7C42916B9 /* Pods-Bookista.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bookista.debug.xcconfig"; path = "Target Support Files/Pods-Bookista/Pods-Bookista.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +127,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB17D8E91FCA30A902B6F1D1 /* Pods_Bookista.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C3C05EDB450015F4805D7FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0DC825E78B7374A0C4C527F /* Pods_Bookista.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3EB6B50729ED49CB00CBFD0D = {
 			isa = PBXGroup;
 			children = (
 				3EB6B51229ED49CB00CBFD0D /* Bookista */,
 				3EB6B51129ED49CB00CBFD0D /* Products */,
+				5BC68C75E9FF9A521E032392 /* Pods */,
+				2C3C05EDB450015F4805D7FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,10 +163,12 @@
 		3EB6B51229ED49CB00CBFD0D /* Bookista */ = {
 			isa = PBXGroup;
 			children = (
-				3EB6B51329ED49CB00CBFD0D /* BookistaApp.swift */,
-				3EB6B51529ED49CB00CBFD0D /* ContentView.swift */,
-				3EB6B51729ED49CC00CBFD0D /* Assets.xcassets */,
-				3EB6B51929ED49CC00CBFD0D /* Preview Content */,
+				3EB6B5FD29EE85CE00CBFD0D /* Info.plist */,
+				3EB6B52429ED4AC900CBFD0D /* Helper */,
+				3EB6B53A29ED4C8500CBFD0D /* Store */,
+				3EB6B52329ED4A8600CBFD0D /* Network */,
+				3EB6B52129ED4A7500CBFD0D /* Views */,
+				3EB6B52229ED4A7B00CBFD0D /* App */,
 			);
 			path = Bookista;
 			sourceTree = "<group>";
@@ -67,6 +181,217 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		3EB6B52129ED4A7500CBFD0D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6B60D29F131A900CBFD0D /* Home */,
+				3EB6B60429EFF1F300CBFD0D /* Reusable */,
+				3EB6B52B29ED4B9900CBFD0D /* GetStartedView */,
+				3EB6B53129ED4C1E00CBFD0D /* Login */,
+				3EB6B53029ED4BCB00CBFD0D /* SignUp */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3EB6B52229ED4A7B00CBFD0D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6B54529EE828500CBFD0D /* Resources  */,
+				3EB6B51329ED49CB00CBFD0D /* BookistaApp.swift */,
+				3EB6B51929ED49CC00CBFD0D /* Preview Content */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3EB6B52329ED4A8600CBFD0D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6B54329ED4CF300CBFD0D /* NetworkManager.swift */,
+				3EB6B54029ED4CC000CBFD0D /* Model */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3EB6B52429ED4AC900CBFD0D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6B60129EE8CA000CBFD0D /* Extensions */,
+				3EB6B53B29ED4C9800CBFD0D /* StringConstants.swift */,
+				3EB6B53D29ED4CA900CBFD0D /* DataError.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		3EB6B52B29ED4B9900CBFD0D /* GetStartedView */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6B52C29ED4BB800CBFD0D /* GreetingView.swift */,
+			);
+			path = GetStartedView;
+			sourceTree = "<group>";
+		};
+		3EB6B53029ED4BCB00CBFD0D /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6B53629ED4C4F00CBFD0D /* SignUpView.swift */,
+				3EB6B53829ED4C5900CBFD0D /* SignUpViewModel.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		3EB6B53129ED4C1E00CBFD0D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6B53229ED4C3600CBFD0D /* LoginView.swift */,
+				3EB6B53429ED4C4100CBFD0D /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3EB6B53A29ED4C8500CBFD0D /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6B54129ED4CE200CBFD0D /* RealmDataStore.swift */,
+				3EB6B53F29ED4CB800CBFD0D /* Model */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		3EB6B53F29ED4CB800CBFD0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6B60B29F1215500CBFD0D /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3EB6B54029ED4CC000CBFD0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3EB6B54529EE828500CBFD0D /* Resources  */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6B54629EE829A00CBFD0D /* Fonts */,
+				3EB6B51729ED49CC00CBFD0D /* Assets.xcassets */,
+			);
+			path = "Resources ";
+			sourceTree = "<group>";
+		};
+		3EB6B54629EE829A00CBFD0D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6B5DE29EE850000CBFD0D /* Nunito_Sans */,
+				3EB6B5B729EE84FA00CBFD0D /* Poppins */,
+				3EB6B54729EE84D100CBFD0D /* Roboto */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3EB6B54729EE84D100CBFD0D /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6B54829EE84D100CBFD0D /* Roboto-Medium.ttf */,
+				3EB6B54929EE84D100CBFD0D /* Roboto-Light.ttf */,
+				3EB6B54A29EE84D100CBFD0D /* Roboto-Regular.ttf */,
+				3EB6B54B29EE84D100CBFD0D /* Roboto-MediumItalic.ttf */,
+				3EB6B54C29EE84D100CBFD0D /* Roboto-ThinItalic.ttf */,
+				3EB6B54D29EE84D100CBFD0D /* Roboto-BoldItalic.ttf */,
+				3EB6B54E29EE84D100CBFD0D /* Roboto-LightItalic.ttf */,
+				3EB6B54F29EE84D100CBFD0D /* Roboto-Italic.ttf */,
+				3EB6B55129EE84D100CBFD0D /* Roboto-BlackItalic.ttf */,
+				3EB6B55229EE84D100CBFD0D /* Roboto-Bold.ttf */,
+				3EB6B55329EE84D100CBFD0D /* Roboto-Thin.ttf */,
+				3EB6B55429EE84D100CBFD0D /* Roboto-Black.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		3EB6B5B729EE84FA00CBFD0D /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6B5B829EE84FA00CBFD0D /* Poppins-ExtraLight.ttf */,
+				3EB6B5B929EE84FA00CBFD0D /* Poppins-ThinItalic.ttf */,
+				3EB6B5BA29EE84FA00CBFD0D /* Poppins-ExtraLightItalic.ttf */,
+				3EB6B5BB29EE84FA00CBFD0D /* Poppins-BoldItalic.ttf */,
+				3EB6B5BC29EE84FA00CBFD0D /* Poppins-Light.ttf */,
+				3EB6B5BD29EE84FA00CBFD0D /* Poppins-Medium.ttf */,
+				3EB6B5BE29EE84FA00CBFD0D /* Poppins-SemiBoldItalic.ttf */,
+				3EB6B5BF29EE84FA00CBFD0D /* Poppins-ExtraBoldItalic.ttf */,
+				3EB6B5C029EE84FA00CBFD0D /* Poppins-ExtraBold.ttf */,
+				3EB6B5C129EE84FA00CBFD0D /* Poppins-BlackItalic.ttf */,
+				3EB6B5C329EE84FA00CBFD0D /* Poppins-Regular.ttf */,
+				3EB6B5C429EE84FA00CBFD0D /* Poppins-LightItalic.ttf */,
+				3EB6B5C529EE84FA00CBFD0D /* Poppins-Bold.ttf */,
+				3EB6B5C629EE84FA00CBFD0D /* Poppins-Black.ttf */,
+				3EB6B5C729EE84FA00CBFD0D /* Poppins-Thin.ttf */,
+				3EB6B5C829EE84FA00CBFD0D /* Poppins-SemiBold.ttf */,
+				3EB6B5C929EE84FA00CBFD0D /* Poppins-Italic.ttf */,
+				3EB6B5CA29EE84FA00CBFD0D /* Poppins-MediumItalic.ttf */,
+			);
+			path = Poppins;
+			sourceTree = "<group>";
+		};
+		3EB6B5DE29EE850000CBFD0D /* Nunito_Sans */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6B5DF29EE850000CBFD0D /* NunitoSans-LightItalic.ttf */,
+				3EB6B5E029EE850000CBFD0D /* NunitoSans-BoldItalic.ttf */,
+				3EB6B5E129EE850000CBFD0D /* NunitoSans-ExtraLight.ttf */,
+				3EB6B5E229EE850000CBFD0D /* NunitoSans-Light.ttf */,
+				3EB6B5E329EE850000CBFD0D /* NunitoSans-BlackItalic.ttf */,
+				3EB6B5E429EE850000CBFD0D /* NunitoSans-ExtraBold.ttf */,
+				3EB6B5E529EE850000CBFD0D /* NunitoSans-Regular.ttf */,
+				3EB6B5E629EE850000CBFD0D /* NunitoSans-SemiBoldItalic.ttf */,
+				3EB6B5E729EE850000CBFD0D /* NunitoSans-Italic.ttf */,
+				3EB6B5E929EE850000CBFD0D /* NunitoSans-Bold.ttf */,
+				3EB6B5EA29EE850000CBFD0D /* NunitoSans-SemiBold.ttf */,
+				3EB6B5EB29EE850000CBFD0D /* NunitoSans-Black.ttf */,
+				3EB6B5EC29EE850000CBFD0D /* NunitoSans-ExtraBoldItalic.ttf */,
+				3EB6B5ED29EE850000CBFD0D /* NunitoSans-ExtraLightItalic.ttf */,
+			);
+			path = Nunito_Sans;
+			sourceTree = "<group>";
+		};
+		3EB6B60129EE8CA000CBFD0D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6B5FF29EE8AF700CBFD0D /* UIFont+Extension.swift */,
+				3EB6B60229EE8CB300CBFD0D /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3EB6B60429EFF1F300CBFD0D /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6B60529EFF20D00CBFD0D /* AuthorizationTextField.swift */,
+				3EB6B60729EFF22500CBFD0D /* SecureAuthorizationTextField.swift */,
+				3EB6B60929EFF24800CBFD0D /* TogglePasswordTextField.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		3EB6B60D29F131A900CBFD0D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6B60E29F131B500CBFD0D /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5BC68C75E9FF9A521E032392 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB2B70657729C4F7C42916B9 /* Pods-Bookista.debug.xcconfig */,
+				3D18B1F7974C033D62A87347 /* Pods-Bookista.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +399,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3EB6B51E29ED49CC00CBFD0D /* Build configuration list for PBXNativeTarget "Bookista" */;
 			buildPhases = (
+				8FAA58664D177FBF0594C500 /* [CP] Check Pods Manifest.lock */,
 				3EB6B50C29ED49CB00CBFD0D /* Sources */,
 				3EB6B50D29ED49CB00CBFD0D /* Frameworks */,
 				3EB6B50E29ED49CB00CBFD0D /* Resources */,
+				98E4DA0FF7A5BB11E6487708 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,20 +452,99 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EB6B56029EE84D100CBFD0D /* Roboto-Thin.ttf in Resources */,
+				3EB6B5DD29EE84FA00CBFD0D /* Poppins-MediumItalic.ttf in Resources */,
+				3EB6B56129EE84D100CBFD0D /* Roboto-Black.ttf in Resources */,
+				3EB6B5D629EE84FA00CBFD0D /* Poppins-Regular.ttf in Resources */,
+				3EB6B55F29EE84D100CBFD0D /* Roboto-Bold.ttf in Resources */,
+				3EB6B5D929EE84FA00CBFD0D /* Poppins-Black.ttf in Resources */,
 				3EB6B51B29ED49CC00CBFD0D /* Preview Assets.xcassets in Resources */,
+				3EB6B5F429EE850000CBFD0D /* NunitoSans-Regular.ttf in Resources */,
+				3EB6B5DA29EE84FA00CBFD0D /* Poppins-Thin.ttf in Resources */,
 				3EB6B51829ED49CC00CBFD0D /* Assets.xcassets in Resources */,
+				3EB6B5D829EE84FA00CBFD0D /* Poppins-Bold.ttf in Resources */,
+				3EB6B55A29EE84D100CBFD0D /* Roboto-BoldItalic.ttf in Resources */,
+				3EB6B5DC29EE84FA00CBFD0D /* Poppins-Italic.ttf in Resources */,
+				3EB6B5D729EE84FA00CBFD0D /* Poppins-LightItalic.ttf in Resources */,
+				3EB6B55729EE84D100CBFD0D /* Roboto-Regular.ttf in Resources */,
+				3EB6B55929EE84D100CBFD0D /* Roboto-ThinItalic.ttf in Resources */,
+				3EB6B55B29EE84D100CBFD0D /* Roboto-LightItalic.ttf in Resources */,
+				3EB6B55E29EE84D100CBFD0D /* Roboto-BlackItalic.ttf in Resources */,
+				3EB6B5F829EE850000CBFD0D /* NunitoSans-Bold.ttf in Resources */,
+				3EB6B55629EE84D100CBFD0D /* Roboto-Light.ttf in Resources */,
+				3EB6B55C29EE84D100CBFD0D /* Roboto-Italic.ttf in Resources */,
+				3EB6B55829EE84D100CBFD0D /* Roboto-MediumItalic.ttf in Resources */,
+				3EB6B5DB29EE84FA00CBFD0D /* Poppins-SemiBold.ttf in Resources */,
+				3EB6B55529EE84D100CBFD0D /* Roboto-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8FAA58664D177FBF0594C500 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bookista-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98E4DA0FF7A5BB11E6487708 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bookista/Pods-Bookista-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bookista/Pods-Bookista-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bookista/Pods-Bookista-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3EB6B50C29ED49CB00CBFD0D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EB6B51629ED49CB00CBFD0D /* ContentView.swift in Sources */,
+				3EB6B60829EFF22500CBFD0D /* SecureAuthorizationTextField.swift in Sources */,
+				3EB6B60029EE8AF700CBFD0D /* UIFont+Extension.swift in Sources */,
+				3EB6B60629EFF20D00CBFD0D /* AuthorizationTextField.swift in Sources */,
+				3EB6B53329ED4C3600CBFD0D /* LoginView.swift in Sources */,
+				3EB6B60C29F1215500CBFD0D /* User.swift in Sources */,
+				3EB6B60F29F131B500CBFD0D /* HomeView.swift in Sources */,
 				3EB6B51429ED49CB00CBFD0D /* BookistaApp.swift in Sources */,
+				3EB6B52D29ED4BB800CBFD0D /* GreetingView.swift in Sources */,
+				3EB6B54429ED4CF300CBFD0D /* NetworkManager.swift in Sources */,
+				3EB6B53929ED4C5900CBFD0D /* SignUpViewModel.swift in Sources */,
+				3EB6B53729ED4C4F00CBFD0D /* SignUpView.swift in Sources */,
+				3EB6B60329EE8CB300CBFD0D /* UIColor+Extension.swift in Sources */,
+				3EB6B60A29EFF24800CBFD0D /* TogglePasswordTextField.swift in Sources */,
+				3EB6B53E29ED4CA900CBFD0D /* DataError.swift in Sources */,
+				3EB6B53C29ED4C9800CBFD0D /* StringConstants.swift in Sources */,
+				3EB6B53529ED4C4100CBFD0D /* LoginViewModel.swift in Sources */,
+				3EB6B54229ED4CE200CBFD0D /* RealmDataStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,20 +667,23 @@
 		};
 		3EB6B51F29ED49CC00CBFD0D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB2B70657729C4F7C42916B9 /* Pods-Bookista.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Bookista/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Bookista/App/Preview Content\"";
 				DEVELOPMENT_TEAM = 93V4WB9C37;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bookista/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,20 +699,23 @@
 		};
 		3EB6B52029ED49CC00CBFD0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D18B1F7974C033D62A87347 /* Pods-Bookista.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Bookista/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Bookista/App/Preview Content\"";
 				DEVELOPMENT_TEAM = 93V4WB9C37;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bookista/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
