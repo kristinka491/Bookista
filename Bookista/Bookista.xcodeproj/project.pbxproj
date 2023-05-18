@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E5D32552A123DE7007BB1D1 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D32542A123DE7007BB1D1 /* TabbarView.swift */; };
+		3E5D32572A123DF3007BB1D1 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D32562A123DF3007BB1D1 /* TabBarViewModel.swift */; };
+		3E5D325B2A123F7F007BB1D1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D325A2A123F7F007BB1D1 /* HomeViewModel.swift */; };
+		3E5D325D2A123F92007BB1D1 /* BookshelfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D325C2A123F92007BB1D1 /* BookshelfView.swift */; };
+		3E5D325F2A123F9A007BB1D1 /* BookshelfViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D325E2A123F9A007BB1D1 /* BookshelfViewModel.swift */; };
+		3E5D32612A123FAF007BB1D1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D32602A123FAF007BB1D1 /* SettingsView.swift */; };
+		3E5D32632A123FB8007BB1D1 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D32622A123FB8007BB1D1 /* SettingsViewModel.swift */; };
+		3E5D32652A124016007BB1D1 /* TabbarItemEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D32642A124016007BB1D1 /* TabbarItemEnum.swift */; };
+		3E8CCA7F2A162A2F002F59E2 /* GreetingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8CCA7E2A162A2F002F59E2 /* GreetingViewModel.swift */; };
+		3EA21D1D2A138A3100797BE9 /* SettingsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA21D1C2A138A3100797BE9 /* SettingsEnum.swift */; };
+		3EA21D212A138E2000797BE9 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA21D202A138E2000797BE9 /* SettingCell.swift */; };
+		3EA21D282A13A13200797BE9 /* AppearanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA21D272A13A13200797BE9 /* AppearanceView.swift */; };
+		3EA21D2A2A13A14600797BE9 /* PaymentMethodsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA21D292A13A14600797BE9 /* PaymentMethodsView.swift */; };
+		3EA21D2C2A13A15500797BE9 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA21D2B2A13A15500797BE9 /* NotificationsView.swift */; };
+		3EA21D2E2A13A16600797BE9 /* AccountInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA21D2D2A13A16600797BE9 /* AccountInformationView.swift */; };
+		3EA21D312A13A4FA00797BE9 /* PurchasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA21D302A13A4FA00797BE9 /* PurchasesView.swift */; };
 		3EB6B51429ED49CB00CBFD0D /* BookistaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B51329ED49CB00CBFD0D /* BookistaApp.swift */; };
 		3EB6B51829ED49CC00CBFD0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6B51729ED49CC00CBFD0D /* Assets.xcassets */; };
 		3EB6B51B29ED49CC00CBFD0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6B51A29ED49CC00CBFD0D /* Preview Assets.xcassets */; };
@@ -44,15 +60,30 @@
 		3EB6B60029EE8AF700CBFD0D /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B5FF29EE8AF700CBFD0D /* UIFont+Extension.swift */; };
 		3EB6B60329EE8CB300CBFD0D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B60229EE8CB300CBFD0D /* UIColor+Extension.swift */; };
 		3EB6B60629EFF20D00CBFD0D /* AuthorizationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B60529EFF20D00CBFD0D /* AuthorizationTextField.swift */; };
-		3EB6B60829EFF22500CBFD0D /* SecureAuthorizationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B60729EFF22500CBFD0D /* SecureAuthorizationTextField.swift */; };
-		3EB6B60A29EFF24800CBFD0D /* TogglePasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B60929EFF24800CBFD0D /* TogglePasswordTextField.swift */; };
 		3EB6B60C29F1215500CBFD0D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B60B29F1215500CBFD0D /* User.swift */; };
 		3EB6B60F29F131B500CBFD0D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B60E29F131B500CBFD0D /* HomeView.swift */; };
+		3EB6B61129F14B2300CBFD0D /* UIApplication+Extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B61029F14B2300CBFD0D /* UIApplication+Extension .swift */; };
 		DB17D8E91FCA30A902B6F1D1 /* Pods_Bookista.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DC825E78B7374A0C4C527F /* Pods_Bookista.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D18B1F7974C033D62A87347 /* Pods-Bookista.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bookista.release.xcconfig"; path = "Target Support Files/Pods-Bookista/Pods-Bookista.release.xcconfig"; sourceTree = "<group>"; };
+		3E5D32542A123DE7007BB1D1 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		3E5D32562A123DF3007BB1D1 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
+		3E5D325A2A123F7F007BB1D1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		3E5D325C2A123F92007BB1D1 /* BookshelfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookshelfView.swift; sourceTree = "<group>"; };
+		3E5D325E2A123F9A007BB1D1 /* BookshelfViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookshelfViewModel.swift; sourceTree = "<group>"; };
+		3E5D32602A123FAF007BB1D1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3E5D32622A123FB8007BB1D1 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		3E5D32642A124016007BB1D1 /* TabbarItemEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarItemEnum.swift; sourceTree = "<group>"; };
+		3E8CCA7E2A162A2F002F59E2 /* GreetingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewModel.swift; sourceTree = "<group>"; };
+		3EA21D1C2A138A3100797BE9 /* SettingsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEnum.swift; sourceTree = "<group>"; };
+		3EA21D202A138E2000797BE9 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		3EA21D272A13A13200797BE9 /* AppearanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceView.swift; sourceTree = "<group>"; };
+		3EA21D292A13A14600797BE9 /* PaymentMethodsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodsView.swift; sourceTree = "<group>"; };
+		3EA21D2B2A13A15500797BE9 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		3EA21D2D2A13A16600797BE9 /* AccountInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInformationView.swift; sourceTree = "<group>"; };
+		3EA21D302A13A4FA00797BE9 /* PurchasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasesView.swift; sourceTree = "<group>"; };
 		3EB6B51029ED49CB00CBFD0D /* Bookista.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookista.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EB6B51329ED49CB00CBFD0D /* BookistaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookistaApp.swift; sourceTree = "<group>"; };
 		3EB6B51729ED49CC00CBFD0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,10 +145,9 @@
 		3EB6B5FF29EE8AF700CBFD0D /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		3EB6B60229EE8CB300CBFD0D /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		3EB6B60529EFF20D00CBFD0D /* AuthorizationTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationTextField.swift; sourceTree = "<group>"; };
-		3EB6B60729EFF22500CBFD0D /* SecureAuthorizationTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureAuthorizationTextField.swift; sourceTree = "<group>"; };
-		3EB6B60929EFF24800CBFD0D /* TogglePasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglePasswordTextField.swift; sourceTree = "<group>"; };
 		3EB6B60B29F1215500CBFD0D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3EB6B60E29F131B500CBFD0D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3EB6B61029F14B2300CBFD0D /* UIApplication+Extension .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension .swift"; sourceTree = "<group>"; };
 		D0DC825E78B7374A0C4C527F /* Pods_Bookista.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bookista.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2B70657729C4F7C42916B9 /* Pods-Bookista.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bookista.debug.xcconfig"; path = "Target Support Files/Pods-Bookista/Pods-Bookista.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +170,84 @@
 				D0DC825E78B7374A0C4C527F /* Pods_Bookista.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E5D32532A123D93007BB1D1 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				3E5D32542A123DE7007BB1D1 /* TabbarView.swift */,
+				3E5D32562A123DF3007BB1D1 /* TabBarViewModel.swift */,
+				3E5D32642A124016007BB1D1 /* TabbarItemEnum.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		3E5D32582A123DFF007BB1D1 /* Bookshelf */ = {
+			isa = PBXGroup;
+			children = (
+				3E5D325C2A123F92007BB1D1 /* BookshelfView.swift */,
+				3E5D325E2A123F9A007BB1D1 /* BookshelfViewModel.swift */,
+			);
+			path = Bookshelf;
+			sourceTree = "<group>";
+		};
+		3E5D32592A123ECD007BB1D1 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3EA21D222A138EFF00797BE9 /* Cells */,
+				3E5D32602A123FAF007BB1D1 /* SettingsView.swift */,
+				3E5D32622A123FB8007BB1D1 /* SettingsViewModel.swift */,
+				3EA21D1C2A138A3100797BE9 /* SettingsEnum.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		3EA21D222A138EFF00797BE9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3EA21D202A138E2000797BE9 /* SettingCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3EA21D232A13A0F900797BE9 /* AccountInformation */ = {
+			isa = PBXGroup;
+			children = (
+				3EA21D2D2A13A16600797BE9 /* AccountInformationView.swift */,
+			);
+			path = AccountInformation;
+			sourceTree = "<group>";
+		};
+		3EA21D242A13A10500797BE9 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				3EA21D2B2A13A15500797BE9 /* NotificationsView.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		3EA21D252A13A11200797BE9 /* PaymentMethods */ = {
+			isa = PBXGroup;
+			children = (
+				3EA21D292A13A14600797BE9 /* PaymentMethodsView.swift */,
+			);
+			path = PaymentMethods;
+			sourceTree = "<group>";
+		};
+		3EA21D262A13A12100797BE9 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				3EA21D272A13A13200797BE9 /* AppearanceView.swift */,
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
+		3EA21D2F2A13A4E900797BE9 /* Purchases */ = {
+			isa = PBXGroup;
+			children = (
+				3EA21D302A13A4FA00797BE9 /* PurchasesView.swift */,
+			);
+			path = Purchases;
 			sourceTree = "<group>";
 		};
 		3EB6B50729ED49CB00CBFD0D = {
@@ -184,11 +292,19 @@
 		3EB6B52129ED4A7500CBFD0D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3EB6B60D29F131A900CBFD0D /* Home */,
-				3EB6B60429EFF1F300CBFD0D /* Reusable */,
 				3EB6B52B29ED4B9900CBFD0D /* GetStartedView */,
 				3EB6B53129ED4C1E00CBFD0D /* Login */,
 				3EB6B53029ED4BCB00CBFD0D /* SignUp */,
+				3E5D32532A123D93007BB1D1 /* Tabbar */,
+				3EB6B60D29F131A900CBFD0D /* Home */,
+				3E5D32582A123DFF007BB1D1 /* Bookshelf */,
+				3E5D32592A123ECD007BB1D1 /* Settings */,
+				3EA21D232A13A0F900797BE9 /* AccountInformation */,
+				3EA21D242A13A10500797BE9 /* Notifications */,
+				3EA21D252A13A11200797BE9 /* PaymentMethods */,
+				3EA21D262A13A12100797BE9 /* Appearance */,
+				3EA21D2F2A13A4E900797BE9 /* Purchases */,
+				3EB6B60429EFF1F300CBFD0D /* Reusable */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -226,6 +342,7 @@
 			isa = PBXGroup;
 			children = (
 				3EB6B52C29ED4BB800CBFD0D /* GreetingView.swift */,
+				3E8CCA7E2A162A2F002F59E2 /* GreetingViewModel.swift */,
 			);
 			path = GetStartedView;
 			sourceTree = "<group>";
@@ -361,6 +478,7 @@
 			children = (
 				3EB6B5FF29EE8AF700CBFD0D /* UIFont+Extension.swift */,
 				3EB6B60229EE8CB300CBFD0D /* UIColor+Extension.swift */,
+				3EB6B61029F14B2300CBFD0D /* UIApplication+Extension .swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -369,8 +487,6 @@
 			isa = PBXGroup;
 			children = (
 				3EB6B60529EFF20D00CBFD0D /* AuthorizationTextField.swift */,
-				3EB6B60729EFF22500CBFD0D /* SecureAuthorizationTextField.swift */,
-				3EB6B60929EFF24800CBFD0D /* TogglePasswordTextField.swift */,
 			);
 			path = Reusable;
 			sourceTree = "<group>";
@@ -379,6 +495,7 @@
 			isa = PBXGroup;
 			children = (
 				3EB6B60E29F131B500CBFD0D /* HomeView.swift */,
+				3E5D325A2A123F7F007BB1D1 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -528,23 +645,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EB6B60829EFF22500CBFD0D /* SecureAuthorizationTextField.swift in Sources */,
+				3E5D325B2A123F7F007BB1D1 /* HomeViewModel.swift in Sources */,
 				3EB6B60029EE8AF700CBFD0D /* UIFont+Extension.swift in Sources */,
+				3EA21D212A138E2000797BE9 /* SettingCell.swift in Sources */,
+				3EA21D2E2A13A16600797BE9 /* AccountInformationView.swift in Sources */,
 				3EB6B60629EFF20D00CBFD0D /* AuthorizationTextField.swift in Sources */,
+				3EA21D282A13A13200797BE9 /* AppearanceView.swift in Sources */,
 				3EB6B53329ED4C3600CBFD0D /* LoginView.swift in Sources */,
 				3EB6B60C29F1215500CBFD0D /* User.swift in Sources */,
+				3EB6B61129F14B2300CBFD0D /* UIApplication+Extension .swift in Sources */,
 				3EB6B60F29F131B500CBFD0D /* HomeView.swift in Sources */,
 				3EB6B51429ED49CB00CBFD0D /* BookistaApp.swift in Sources */,
 				3EB6B52D29ED4BB800CBFD0D /* GreetingView.swift in Sources */,
 				3EB6B54429ED4CF300CBFD0D /* NetworkManager.swift in Sources */,
 				3EB6B53929ED4C5900CBFD0D /* SignUpViewModel.swift in Sources */,
+				3E5D325F2A123F9A007BB1D1 /* BookshelfViewModel.swift in Sources */,
+				3E5D32572A123DF3007BB1D1 /* TabBarViewModel.swift in Sources */,
 				3EB6B53729ED4C4F00CBFD0D /* SignUpView.swift in Sources */,
 				3EB6B60329EE8CB300CBFD0D /* UIColor+Extension.swift in Sources */,
-				3EB6B60A29EFF24800CBFD0D /* TogglePasswordTextField.swift in Sources */,
+				3EA21D2C2A13A15500797BE9 /* NotificationsView.swift in Sources */,
+				3E8CCA7F2A162A2F002F59E2 /* GreetingViewModel.swift in Sources */,
+				3EA21D1D2A138A3100797BE9 /* SettingsEnum.swift in Sources */,
+				3E5D32632A123FB8007BB1D1 /* SettingsViewModel.swift in Sources */,
+				3E5D325D2A123F92007BB1D1 /* BookshelfView.swift in Sources */,
+				3EA21D2A2A13A14600797BE9 /* PaymentMethodsView.swift in Sources */,
+				3E5D32552A123DE7007BB1D1 /* TabbarView.swift in Sources */,
 				3EB6B53E29ED4CA900CBFD0D /* DataError.swift in Sources */,
 				3EB6B53C29ED4C9800CBFD0D /* StringConstants.swift in Sources */,
 				3EB6B53529ED4C4100CBFD0D /* LoginViewModel.swift in Sources */,
+				3EA21D312A13A4FA00797BE9 /* PurchasesView.swift in Sources */,
+				3E5D32612A123FAF007BB1D1 /* SettingsView.swift in Sources */,
 				3EB6B54229ED4CE200CBFD0D /* RealmDataStore.swift in Sources */,
+				3E5D32652A124016007BB1D1 /* TabbarItemEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,13 +10,11 @@ import RealmSwift
 import Combine
 
 class LoginViewModel: ObservableObject {
-    @AppStorage("isUserRemembered") var isRemembered = false
     @AppStorage("isUserLogged") var isLogged = false
     @Published var email: String = ""
     @Published var password: String = ""
     @Published var isValid = false
     @Published var isShowError = false
-    @Published var isRegistered = false
     
     private let realmDataStore = RealmDataStore.shared
     private var cancellableSet: Set<AnyCancellable> = []
@@ -30,7 +28,6 @@ class LoginViewModel: ObservableObject {
         if user == nil {
             isShowError = true
         } else {
-            isRegistered = true
             isLogged = true
             clearFields()
         }

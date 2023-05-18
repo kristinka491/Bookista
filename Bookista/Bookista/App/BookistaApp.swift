@@ -9,14 +9,16 @@ import SwiftUI
 
 @main
 struct BookistaApp: App {
-    @AppStorage("isUserRemembered") var isRemembered = false
     @AppStorage("isUserLogged") var isLogged = false
+    @AppStorage("isUserOnboarded") var isOnboarded = false
     
     @ViewBuilder
     var body: some Scene {
         WindowGroup {
-            if isRemembered && isLogged {
-                HomeView()
+            if isLogged {
+                TabbarView()
+            } else if isOnboarded {
+                LoginView()
             } else {
                 GreetingView()
             }

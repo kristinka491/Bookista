@@ -38,4 +38,14 @@ struct StringConstants {
     static let signUpViewLoginButton = "Log in"
     static let signUpViewCreateAnAccountButton = "Create an account"
     static let signUpViewInvalidEmail = "Invalid email"
+    
+    //ProfileView
+    static let profileViewTitle = "Settings"
+    static let profileViewAccountInformation = "Account information"
+    static let profileViewNotification = "Notifications"
+    static let profileViewPaymentMethods = "Payment Methods"
+    static let profileViewAppearance = "Appearance"
+    static let profileViewGeneral = "General"
+    static let profileViewPurchases = "Purchases"
+    static let profileViewLogOut = "Log out"
 }

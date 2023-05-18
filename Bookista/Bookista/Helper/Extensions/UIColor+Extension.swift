@@ -12,10 +12,12 @@ import SwiftUI
 
 extension Color {
     
-    static let accentColor = Color.hexStringToColor(hex: "#F9399B")
+    static let mainColor = Color.hexStringToColor(hex: "#F9399B")
     static let getStartedViewAdditionalButtonColor = Color.hexStringToColor(hex: "CE3784")
     static let getStartedViewTextColor = Color.hexStringToColor(hex: "C9A98D")
     static let disableButtonColor = Color.hexStringToColor(hex: "F28FC1")
+    static let tabbarItemColor = Color.hexStringToColor(hex: "E7388A")
+    static let backgroundColor = Color.hexStringToColor(hex: "FFF6EA")
     
     static func hexStringToColor(hex: String) -> Color {
         var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()

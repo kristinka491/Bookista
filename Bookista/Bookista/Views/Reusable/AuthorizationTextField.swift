@@ -15,16 +15,19 @@ struct AuthorizationTextField: View {
     var body: some View {
         HStack(spacing: 10) {
             Image(systemName: imageName)
-                .foregroundColor(.accentColor)
+                .foregroundColor(.mainColor)
                 .padding(.leading, 10)
             
-            TextField(placeHolder, text: $text, prompt: Text(placeHolder).foregroundColor(Color.getStartedViewTextColor))
+            TextField(placeHolder, text: $text//, prompt: Text(placeHolder).foregroundColor(Color.getStartedViewTextColor)
+            ) {
+                UIApplication.shared.endEditing()
+                }
                 .font(.roboto(.regular, size: 15))
                 .frame(height: 40)
                 .multilineTextAlignment(.leading)
                 .foregroundColor(.getStartedViewTextColor)
-                
                 .autocapitalization(.none)
+                .autocorrectionDisabled(true)
         }
         .background(Color.white)
         .cornerRadius(10)

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct GreetingView: View {
+    @StateObject var viewModel = GreetingViewModel()
+    
     var body: some View {
         NavigationView {
             ZStack{
@@ -32,7 +34,7 @@ struct GreetingView: View {
                     HStack(spacing: 0) {
                         Text(StringConstants.getStartedViewTitleContinuation)
                             .font(.roboto(.regular, size: 25))
-                            .foregroundColor(.accentColor)
+                            .foregroundColor(.mainColor)
                         Spacer()
                     }
                     .padding(.horizontal, 10)
@@ -57,8 +59,11 @@ struct GreetingView: View {
                                 .frame(width: 20, height: 20)
                                 .foregroundColor(.white)
                                 .padding(.all, 10)
-                                .background(Color.accentColor)
+                                .background(Color.mainColor)
                                 .clipShape(Circle())
+                                .onTapGesture {
+                                    viewModel.isOnboarded = true
+                                }
                         }
                         Spacer()
                     }

@@ -21,28 +21,12 @@ struct LoginView: View {
                 VStack(spacing: 0) {
                     Text(StringConstants.loginViewTitle)
                         .font(.roboto(.regular, size: 30))
-                        .foregroundColor(.accentColor)
+                        .foregroundColor(.mainColor)
                         .padding(.bottom, 40)
                     
                     AuthorizationTextField(placeHolder: StringConstants.loginViewEmailTitle, imageName: "envelope", text: $viewModel.email)
-                    AuthorizationTextField(placeHolder: StringConstants.loginViewPasswordTitle, imageName: "lock", text: $viewModel.password)
+                    AuthorizationTextField(placeHolder: StringConstants.loginViewPasswordTitle, imageName: "lock", text: $viewModel.password) 
                         .padding(.bottom, -10)
-                    
-                    HStack(spacing: 10) {
-                        Image(systemName: viewModel.isRemembered ? "checkmark.circle" : "circle")
-                            .foregroundColor(.accentColor)
-                        
-                        Text(StringConstants.loginViewRememberMe)
-                            .font(.roboto(.regular, size: 12))
-                            .foregroundColor(.getStartedViewTextColor)
-                        
-                        Spacer()
-                    }
-                    .onTapGesture {
-                        viewModel.isRemembered.toggle()
-                    }
-                    .padding(.leading, 30)
-                    .padding(.bottom, 20)
                     
                     HStack(spacing: 5) {
                         Text(StringConstants.loginViewDontHaveAnAccount)
@@ -52,7 +36,7 @@ struct LoginView: View {
                         NavigationLink(destination: SignUpView()) {
                             Text(StringConstants.loginViewSignUpButton)
                                 .font(.roboto(.regular, size: 12)).underline()
-                                .foregroundColor(.accentColor)
+                                .foregroundColor(.mainColor)
                         }
                     }
                     .padding(.bottom, 20)
@@ -66,13 +50,10 @@ struct LoginView: View {
                     })
                     .padding(.horizontal, 70)
                     .padding(.vertical, 10)
-                    .background(viewModel.isValid ? Color.accentColor : Color.disableButtonColor)
+                    .background(viewModel.isValid ? Color.mainColor : Color.disableButtonColor)
                     .cornerRadius(10)
                     .disabled(!viewModel.isValid)
                 }
-            }
-            .navigationDestination(isPresented: $viewModel.isRegistered) {
-                HomeView()
             }
         }
         .toolbar(.hidden)
