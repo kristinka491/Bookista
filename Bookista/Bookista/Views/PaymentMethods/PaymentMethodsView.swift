@@ -11,18 +11,22 @@ struct PaymentMethodsView: View {
     @EnvironmentObject var tabViewModel: TabBarViewModel
 
     var body: some View {
-        Text("Hello,!")
-            .onAppear {
-                tabViewModel.isHiddenTabBar = true
-            }
-            .onDisappear {
-                tabViewModel.isHiddenTabBar = false
-            }
+        ZStack() {
+            Color.backgroundColor
+                .ignoresSafeArea()
+        }
+        .onAppear {
+            tabViewModel.isHiddenTabBar = true
+        }
+        .onWillDisappear {
+            tabViewModel.isHiddenTabBar = false
+        }
     }
 }
 
 struct PaymentMethodsView_Previews: PreviewProvider {
     static var previews: some View {
         PaymentMethodsView()
+            .environmentObject(TabBarViewModel())
     }
 }

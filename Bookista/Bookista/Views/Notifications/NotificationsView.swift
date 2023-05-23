@@ -11,18 +11,22 @@ struct NotificationsView: View {
     @EnvironmentObject var tabViewModel: TabBarViewModel
 
     var body: some View {
-        Text("Hello, World")
-            .onAppear {
-                tabViewModel.isHiddenTabBar = true
-            }
-            .onDisappear {
-                tabViewModel.isHiddenTabBar = false
-            }
+        ZStack() {
+            Color.backgroundColor
+                .ignoresSafeArea()
+        }
+        .onAppear {
+            tabViewModel.isHiddenTabBar = true
+        }
+        .onWillDisappear {
+            tabViewModel.isHiddenTabBar = false
+        }
     }
 }
 
 struct NotificationsView_Previews: PreviewProvider {
     static var previews: some View {
         NotificationsView()
+            .environmentObject(TabBarViewModel())
     }
 }

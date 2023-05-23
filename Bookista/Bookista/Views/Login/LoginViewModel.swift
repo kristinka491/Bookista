@@ -11,6 +11,7 @@ import Combine
 
 class LoginViewModel: ObservableObject {
     @AppStorage("isUserLogged") var isLogged = false
+    @AppStorage("currentUserLogin") var currentUserLogin: String?
     @Published var email: String = ""
     @Published var password: String = ""
     @Published var isValid = false
@@ -28,6 +29,7 @@ class LoginViewModel: ObservableObject {
         if user == nil {
             isShowError = true
         } else {
+            currentUserLogin = email
             isLogged = true
             clearFields()
         }

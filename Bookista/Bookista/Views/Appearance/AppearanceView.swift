@@ -11,11 +11,14 @@ struct AppearanceView: View {
     @EnvironmentObject var tabViewModel: TabBarViewModel
 
     var body: some View {
-        Text("Hello")
-            .onAppear {
+        ZStack() {
+            Color.backgroundColor
+                .ignoresSafeArea()
+        }
+        .onAppear {
             tabViewModel.isHiddenTabBar = true
         }
-        .onDisappear {
+        .onWillDisappear {
             tabViewModel.isHiddenTabBar = false
         }
     }
@@ -24,5 +27,6 @@ struct AppearanceView: View {
 struct AppearanceView_Previews: PreviewProvider {
     static var previews: some View {
         AppearanceView()
+            .environmentObject(TabBarViewModel())
     }
 }

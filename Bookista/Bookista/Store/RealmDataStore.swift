@@ -7,8 +7,10 @@
 
 import Foundation
 import RealmSwift
+import SwiftUI
 
 class RealmDataStore {
+    @AppStorage("currentUserLogin") var currentUserLogin: String?
     
     static let shared = RealmDataStore()
     private let realm = try? Realm()
@@ -46,10 +48,41 @@ class RealmDataStore {
         return getUser(with: email) != nil
     }
     
+    func getCurrentUser() -> User? {
+        if let currentUserLogin = currentUserLogin {
+            return getUser(with: currentUserLogin)
+        }
+        return nil
+    }
+    
+    func deleteUser(with login: String) {
+        if let user = realm?.object(ofType: User.self,
+                                    forPrimaryKey: login) {
+            try? realm?.write {
+                realm?.delete(user)
+            }
+        }
+    }
+    
+    func updateProfile(name: String,
+                       lastName: String,
+                       avatarImageURL: String?) {
+        let currentUser = getCurrentUser()
+
+        try? realm?.write {
+            currentUser?.name = name
+            currentUser?.lastName = lastName
+            if let avatarImageURL = avatarImageURL {
+                currentUser?.imageUrl = avatarImageURL
+            }
+        }
+    }
+
     private func saveObject(user: User) {
         try? realm?.write {
             realm?.add(user)
         }
         print("Data Was Saved To Realm Database.")
     }
+    
 }

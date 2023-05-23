@@ -18,7 +18,7 @@ struct AuthorizationTextField: View {
                 .foregroundColor(.mainColor)
                 .padding(.leading, 10)
             
-            TextField(placeHolder, text: $text//, prompt: Text(placeHolder).foregroundColor(Color.getStartedViewTextColor)
+            TextField(placeHolder, text: $text
             ) {
                 UIApplication.shared.endEditing()
                 }
@@ -31,7 +31,7 @@ struct AuthorizationTextField: View {
         }
         .background(Color.white)
         .cornerRadius(10)
-        .padding([.trailing, .leading], 20)
+        .padding(.horizontal, 20)
         .padding(.bottom, 20)
     }
 }

@@ -48,4 +48,16 @@ struct StringConstants {
     static let profileViewGeneral = "General"
     static let profileViewPurchases = "Purchases"
     static let profileViewLogOut = "Log out"
+    
+    //AccountInformationView
+    static let accountInformationViewTitle = "Account Information"
+    static let accountInformationViewEmail = "E-mail"
+    static let accountInformationViewPassword = "Password"
+    static let accountInformationViewDeleteButtonTitle = "Delete account"
+    static let accountInformationViewDeleteAccountText = "Your account will be permanently removed from the application. All your data will be lost."
+    static let accountInformationViewFirstName = "First Name"
+    static let accountInformationViewLastName = "Last name"
+    static let accountInformationViewSaveChangesButtonTitle = "Save changes"
+    static let accountInformationViewChangePhoto = "Change photo"
+    static let accountInformationViewChangePassword = "Change password"
 }

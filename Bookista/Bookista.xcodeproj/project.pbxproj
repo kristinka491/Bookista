@@ -15,7 +15,9 @@
 		3E5D32612A123FAF007BB1D1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D32602A123FAF007BB1D1 /* SettingsView.swift */; };
 		3E5D32632A123FB8007BB1D1 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D32622A123FB8007BB1D1 /* SettingsViewModel.swift */; };
 		3E5D32652A124016007BB1D1 /* TabbarItemEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D32642A124016007BB1D1 /* TabbarItemEnum.swift */; };
+		3E61D4252A1B5CF4003CC7C3 /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E61D4242A1B5CF4003CC7C3 /* Image+Extension.swift */; };
 		3E8CCA7F2A162A2F002F59E2 /* GreetingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8CCA7E2A162A2F002F59E2 /* GreetingViewModel.swift */; };
+		3E8CCA812A1652F1002F59E2 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8CCA802A1652F1002F59E2 /* View+Extension.swift */; };
 		3EA21D1D2A138A3100797BE9 /* SettingsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA21D1C2A138A3100797BE9 /* SettingsEnum.swift */; };
 		3EA21D212A138E2000797BE9 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA21D202A138E2000797BE9 /* SettingCell.swift */; };
 		3EA21D282A13A13200797BE9 /* AppearanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA21D272A13A13200797BE9 /* AppearanceView.swift */; };
@@ -63,6 +65,8 @@
 		3EB6B60C29F1215500CBFD0D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B60B29F1215500CBFD0D /* User.swift */; };
 		3EB6B60F29F131B500CBFD0D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B60E29F131B500CBFD0D /* HomeView.swift */; };
 		3EB6B61129F14B2300CBFD0D /* UIApplication+Extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B61029F14B2300CBFD0D /* UIApplication+Extension .swift */; };
+		3EC062692A1760FC00C64A99 /* AccountInformationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC062682A1760FC00C64A99 /* AccountInformationViewModel.swift */; };
+		3EC0626C2A1786C800C64A99 /* LocalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC0626B2A1786C800C64A99 /* LocalManager.swift */; };
 		DB17D8E91FCA30A902B6F1D1 /* Pods_Bookista.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DC825E78B7374A0C4C527F /* Pods_Bookista.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,7 +80,9 @@
 		3E5D32602A123FAF007BB1D1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		3E5D32622A123FB8007BB1D1 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		3E5D32642A124016007BB1D1 /* TabbarItemEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarItemEnum.swift; sourceTree = "<group>"; };
+		3E61D4242A1B5CF4003CC7C3 /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
 		3E8CCA7E2A162A2F002F59E2 /* GreetingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewModel.swift; sourceTree = "<group>"; };
+		3E8CCA802A1652F1002F59E2 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		3EA21D1C2A138A3100797BE9 /* SettingsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEnum.swift; sourceTree = "<group>"; };
 		3EA21D202A138E2000797BE9 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		3EA21D272A13A13200797BE9 /* AppearanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceView.swift; sourceTree = "<group>"; };
@@ -148,6 +154,8 @@
 		3EB6B60B29F1215500CBFD0D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3EB6B60E29F131B500CBFD0D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3EB6B61029F14B2300CBFD0D /* UIApplication+Extension .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension .swift"; sourceTree = "<group>"; };
+		3EC062682A1760FC00C64A99 /* AccountInformationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInformationViewModel.swift; sourceTree = "<group>"; };
+		3EC0626B2A1786C800C64A99 /* LocalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalManager.swift; sourceTree = "<group>"; };
 		D0DC825E78B7374A0C4C527F /* Pods_Bookista.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bookista.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2B70657729C4F7C42916B9 /* Pods-Bookista.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bookista.debug.xcconfig"; path = "Target Support Files/Pods-Bookista/Pods-Bookista.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -214,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				3EA21D2D2A13A16600797BE9 /* AccountInformationView.swift */,
+				3EC062682A1760FC00C64A99 /* AccountInformationViewModel.swift */,
 			);
 			path = AccountInformation;
 			sourceTree = "<group>";
@@ -368,6 +377,7 @@
 		3EB6B53A29ED4C8500CBFD0D /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				3EC0626B2A1786C800C64A99 /* LocalManager.swift */,
 				3EB6B54129ED4CE200CBFD0D /* RealmDataStore.swift */,
 				3EB6B53F29ED4CB800CBFD0D /* Model */,
 			);
@@ -479,6 +489,8 @@
 				3EB6B5FF29EE8AF700CBFD0D /* UIFont+Extension.swift */,
 				3EB6B60229EE8CB300CBFD0D /* UIColor+Extension.swift */,
 				3EB6B61029F14B2300CBFD0D /* UIApplication+Extension .swift */,
+				3E8CCA802A1652F1002F59E2 /* View+Extension.swift */,
+				3E61D4242A1B5CF4003CC7C3 /* Image+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -650,10 +662,13 @@
 				3EA21D212A138E2000797BE9 /* SettingCell.swift in Sources */,
 				3EA21D2E2A13A16600797BE9 /* AccountInformationView.swift in Sources */,
 				3EB6B60629EFF20D00CBFD0D /* AuthorizationTextField.swift in Sources */,
+				3EC062692A1760FC00C64A99 /* AccountInformationViewModel.swift in Sources */,
 				3EA21D282A13A13200797BE9 /* AppearanceView.swift in Sources */,
 				3EB6B53329ED4C3600CBFD0D /* LoginView.swift in Sources */,
 				3EB6B60C29F1215500CBFD0D /* User.swift in Sources */,
+				3E8CCA812A1652F1002F59E2 /* View+Extension.swift in Sources */,
 				3EB6B61129F14B2300CBFD0D /* UIApplication+Extension .swift in Sources */,
+				3E61D4252A1B5CF4003CC7C3 /* Image+Extension.swift in Sources */,
 				3EB6B60F29F131B500CBFD0D /* HomeView.swift in Sources */,
 				3EB6B51429ED49CB00CBFD0D /* BookistaApp.swift in Sources */,
 				3EB6B52D29ED4BB800CBFD0D /* GreetingView.swift in Sources */,
@@ -663,6 +678,7 @@
 				3E5D32572A123DF3007BB1D1 /* TabBarViewModel.swift in Sources */,
 				3EB6B53729ED4C4F00CBFD0D /* SignUpView.swift in Sources */,
 				3EB6B60329EE8CB300CBFD0D /* UIColor+Extension.swift in Sources */,
+				3EC0626C2A1786C800C64A99 /* LocalManager.swift in Sources */,
 				3EA21D2C2A13A15500797BE9 /* NotificationsView.swift in Sources */,
 				3E8CCA7F2A162A2F002F59E2 /* GreetingViewModel.swift in Sources */,
 				3EA21D1D2A138A3100797BE9 /* SettingsEnum.swift in Sources */,

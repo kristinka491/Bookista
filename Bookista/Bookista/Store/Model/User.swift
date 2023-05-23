@@ -12,4 +12,6 @@ class User: Object, ObjectKeyIdentifiable {
     @Persisted(primaryKey: true) var email = ""
     @Persisted var name = ""
     @Persisted var password = ""
+    @Persisted var lastName = ""
+    @Persisted var imageUrl: String?
 }

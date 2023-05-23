@@ -12,6 +12,7 @@ import Combine
 
 class SignUpViewModel: ObservableObject {
     @AppStorage("isUserLogged") var isLogged = false
+    @AppStorage("currentUserLogin") var currentUserLogin: String?
     
     @Published var email: String = ""
     @Published var name: String = ""
@@ -39,6 +40,7 @@ class SignUpViewModel: ObservableObject {
         if !isUserRegistered {
             isShowError = true
         } else {
+            currentUserLogin = email
             isLogged = true
             clearFields()
         }

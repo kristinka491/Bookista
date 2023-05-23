@@ -81,7 +81,7 @@ private struct TabButton: View {
                 HStack(spacing: 10) {
                     Image(systemName: tab.icon)
                         .font(.system(size: 20, weight: .semibold, design: .rounded))
-                        .foregroundColor(isSelected ? tab.color : .black.opacity(0.7))
+                        .foregroundColor(isSelected ? tab.color : .getStartedViewTextColor)
                         .rotationEffect(.degrees(rotationAngle))
                         .scaleEffect(isSelected ? 1 : 0.9)
                         .animation(.easeInOut, value: rotationAngle)
@@ -113,5 +113,6 @@ private struct TabButton: View {
 struct TabbarView_Previews: PreviewProvider {
     static var previews: some View {
         TabbarView()
+            .environmentObject(TabBarViewModel())
     }
 }
