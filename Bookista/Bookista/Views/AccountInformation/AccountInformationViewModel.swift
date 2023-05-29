@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 import PhotosUI
 import Realm
+import Combine
 
 class AccountInformationViewModel: ObservableObject {
     @AppStorage("isUserLogged") var isLogged = true
@@ -21,20 +22,26 @@ class AccountInformationViewModel: ObservableObject {
     @Published var email: String = ""
     @Published var password: String = ""
     @Published var user: User?
-    
-    init() {
-        loadUserInformation()
-    }
+    @Published var isChanged = false
+    @Published var isImageSet = false
     
     private let realmDataStore = RealmDataStore.shared
     private let localManager = LocalManager()
+    private var publishers = Set<AnyCancellable>()
+    
+    init() {
+        loadUserInformation()
+        isUserInfoChanged()
+    }
     
     func updateProfile() {
-        localManager.deleteImage(imageName: user?.imageUrl)
+        let imageName = UUID().uuidString
+        realmDataStore.updateProfile(name: firstName, lastName: lastName, avatarImageURL: imageName)
         
-        let avatarName = UUID().uuidString
-        localManager.saveImage(image: selectedImage, imageName: avatarName)
-        realmDataStore.updateProfile(name: firstName, lastName: lastName, avatarImageURL: avatarName)
+        if isImageSet {
+            localManager.deleteImage(imageName: user?.imageUrl)
+            localManager.saveImage(image: selectedImage, imageName: imageName)
+        }
     }
         
     func deleteUser(email: String) {
@@ -44,9 +51,19 @@ class AccountInformationViewModel: ObservableObject {
         isLogged = false
     }
     
+    private func isUserInfoChanged() {
+        Publishers.CombineLatest3($firstName, $lastName, $isImageSet).map { [weak self] firstName, lastName, isImageSet in
+            return self?.user?.name != firstName || self?.user?.lastName != lastName || isImageSet
+        }
+        .receive(on: DispatchQueue.main)
+        .assign(to: \.isChanged, on: self)
+        .store(in: &publishers)
+    }
+    
     private func loadUserInformation() {
         user = realmDataStore.getCurrentUser()
         firstName = user?.name ?? ""
+        lastName = user?.lastName ?? ""
         email = user?.email ?? ""
         
         let imageUrl = user?.imageUrl

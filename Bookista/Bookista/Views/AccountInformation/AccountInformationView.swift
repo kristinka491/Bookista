@@ -12,32 +12,62 @@ struct AccountInformationView: View {
     @EnvironmentObject var tabViewModel: TabBarViewModel
     @Environment(\.dismiss) var dismiss
     @StateObject var viewModel = AccountInformationViewModel()
+    @State var isSavedWithoutChanges = false
 
     var body: some View {
-        ZStack() {
+        ZStack {
             Color.backgroundColor
                 .ignoresSafeArea()
+            
             VStack(spacing: 0) {
-                ScrollView(showsIndicators: false) {
-                    HStack(spacing: 0) {
-                        Text(StringConstants.accountInformationViewTitle)
-                            .foregroundColor(.mainColor)
-                            .font(.poppins(.regular, size: 30))
-                        
-                        Spacer()
-                    }
-                    .padding(.top, 50)
-                    .padding(.bottom, 30)
-                    .padding(.horizontal, 20)
-                    
-                    Image(uiImage: ((viewModel.selectedImage ?? UIImage(systemName: "person.crop.circle")) ?? UIImage()))
+                HStack(spacing: 7) {
+                    Image(systemName: "chevron.backward")
                         .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 60, height: 60)
-                        .clipShape(Circle())
-                        .blendMode(.overlay)
-                        .padding(.bottom, 10)
+                        .frame(width: 10, height: 18)
+                        .foregroundColor(.mainColor)
                     
+                    Text(StringConstants.accountInformationBackButton)
+                        .foregroundColor(.mainColor)
+                    
+                    Spacer()
+                }
+                .padding(.horizontal, 10)
+                .padding(.top, 10)
+                .onTapGesture {
+                    if !viewModel.isChanged {
+                        dismiss()
+                    } else {
+                        isSavedWithoutChanges = true
+                    }
+                }
+                .confirmationDialog(StringConstants.saveWithoutChangesTitle, isPresented: $isSavedWithoutChanges, titleVisibility: .visible) {
+                    Button(StringConstants.accountInformationCancelButton, role: .cancel) {
+                        isSavedWithoutChanges = false
+                    }
+                    .background(Color.getStartedViewTextColor)
+                    
+                    Button(StringConstants.accountInformationYesButton, role: .none) {
+                        isSavedWithoutChanges = false
+                        dismiss()
+                    }
+                }
+                
+                ScrollView(showsIndicators: false) {
+                    Text(StringConstants.accountInformationViewTitle)
+                        .foregroundColor(.mainColor)
+                        .font(.poppins(.regular, size: 30))
+                        .padding(.top, 30)
+                        .padding(.bottom, 30)
+                        .padding(.horizontal, 20)
+                    
+                    if let image = viewModel.selectedImage {
+                        Image(uiImage: image)
+                            .configureImage()
+                    } else {
+                        Image(systemName: "person.crop.circle")
+                            .configureImage()
+                            .foregroundColor(.mainColor)
+                    }
                     
                     PhotosPicker(selection: $viewModel.selectedItem) {
                         Text(StringConstants.accountInformationViewChangePhoto)
@@ -48,6 +78,7 @@ struct AccountInformationView: View {
                         Task {
                             if let imageData = try? await newValue?.loadTransferable(type: Data.self), let image = UIImage(data: imageData) {
                                 viewModel.selectedImage = image
+                                viewModel.isImageSet = true
                             }
                         }
                     }
@@ -56,41 +87,47 @@ struct AccountInformationView: View {
                     AuthorizationTextField(placeHolder: StringConstants.accountInformationViewFirstName,
                                            imageName: "person", text: $viewModel.firstName)
                     
-                    AuthorizationTextField(placeHolder: StringConstants.accountInformationViewLastName, imageName: "signature", text: $viewModel.lastName)
+                    AuthorizationTextField(placeHolder: StringConstants.accountInformationViewLastName, imageName: "person", text: $viewModel.lastName)
                     
-                    AuthorizationTextField(placeHolder: StringConstants.accountInformationViewEmail, imageName: "envelope", text: $viewModel.email)
-                    
-                    HStack(spacing: 5) {
-                        Image(systemName: "lock")
+                    HStack(spacing: 10) {
+                        Image(systemName: "envelope")
                             .foregroundColor(.mainColor)
                             .padding(.leading, 10)
                         
-                        NavigationLink(destination: LoginView()) {
-                            Text(StringConstants.accountInformationViewChangePassword)
-                                .foregroundColor(.secondary).opacity(0.5)
-                                .font(.poppins(.regular, size: 15))
-                            Spacer()
-                        }
+                        Text(viewModel.email)
+                            .font(.roboto(.regular, size: 15))
+                            .frame(height: 40)
+                            .multilineTextAlignment(.leading)
+                            .foregroundColor(.getStartedViewTextColor)
+                        
+                        Spacer()
                     }
-                    .padding(.vertical, 10)
-                    .background(Color.white)
+                    .background(Color.disabledTextFieldColor)
                     .cornerRadius(10)
                     .padding(.horizontal, 20)
-                    .padding(.bottom, 20)
+                    .padding(.bottom, 10)
                     
+                    Button(action: {
+                        viewModel.updateProfile()
+                        dismiss()
+                    }, label: {
+                        Text(StringConstants.accountInformationViewSaveChangesButtonTitle)
+                            .frame(maxWidth: .infinity)
+                            .foregroundColor(.white)
+                            .font(.poppins(.regular, size: 15))
+                            .padding(.vertical, 13)
+                            .background(viewModel.isChanged ? Color.mainColor : Color.disabledButtonColor)
+                            .cornerRadius(10)
+                            .padding(.all, 20)
+                    })
+                    .disabled(!viewModel.isChanged)
                     
-                    Text(StringConstants.accountInformationViewSaveChangesButtonTitle)
-                        .foregroundColor(.getStartedViewTextColor)
-                        .font(.poppins(.regular, size: 15))
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 10)
-                        .background(Color.white)
-                        .cornerRadius(10)
-                        .padding([.horizontal, .bottom], 20)
-                        .onTapGesture {
-                            viewModel.updateProfile()
-                            dismiss()
-                        }
+                    NavigationLink(destination: ChangePasswordView()) {
+                        Text(StringConstants.accountInformationViewChangePassword)
+                            .foregroundColor(.mainColor)
+                            .font(.poppins(.regular, size: 15))
+                    }
+                    .padding(.bottom, 10)
                     
                     Text(StringConstants.accountInformationViewDeleteAccountText)
                         .font(.poppins(.regular, size: 15))
@@ -102,28 +139,29 @@ struct AccountInformationView: View {
                         viewModel.deleteUser(email: viewModel.email)
                     }, label: {
                         Text(StringConstants.accountInformationViewDeleteButtonTitle)
-                            .lineLimit(0)
-                            .foregroundColor(.white)
+                            .foregroundColor(.mainColor)
                             .font(.poppins(.regular, size: 15))
                             .padding(.all, 15)
                         
                     })
-                    .padding(.horizontal, 20)
-                    .background(Color.mainColor)
-                    .cornerRadius(10)
-                    .padding(.bottom, 100)
                 }
             }
-            .onAppear {
-                tabViewModel.isHiddenTabBar = true
-            }
-            .onWillDisappear {
-                tabViewModel.isHiddenTabBar = false
-            }
-            .onDisappear {
-                
-            }
         }
+        .toolbar(.hidden)
+        .onAppear {
+            tabViewModel.isHiddenTabBar = true
+        }
+    }
+}
+
+fileprivate extension Image {
+    
+    func configureImage() -> some View {
+        return self.resizable()
+            .aspectRatio(contentMode: .fill)
+            .frame(width: 60, height: 60)
+            .clipShape(Circle())
+            .padding(.bottom, 10)
     }
 }
 

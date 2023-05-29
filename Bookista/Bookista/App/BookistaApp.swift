@@ -12,6 +12,10 @@ struct BookistaApp: App {
     @AppStorage("isUserLogged") var isLogged = false
     @AppStorage("isUserOnboarded") var isOnboarded = false
     
+    init() {
+        UIView.appearance(whenContainedInInstancesOf: [UIAlertController.self]).tintColor = UIColor(Color.mainColor)
+    }
+    
     @ViewBuilder
     var body: some Scene {
         WindowGroup {

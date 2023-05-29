@@ -14,7 +14,10 @@ struct StringConstants {
     static let wrongUsernameOrPasswordMessage = "Wrong username or password"
     static let userIsRegisteredTitle = "Something went wrong"
     static let userIsRegisteredMessage = "This user is already registered"
-    
+    static let theSamePasswordTitle = "Something went wrong"
+    static let theSamePasswordMessage = "New password must be different from the previous used password"
+    static let saveWithoutChangesTitle = "Are you sure you want to leave this page without saving?"
+   
     //GetStartedView
     static let getStartedViewTitle = "Find Your Next"
     static let getStartedViewTitleContinuation = "Great Read!"
@@ -60,4 +63,19 @@ struct StringConstants {
     static let accountInformationViewSaveChangesButtonTitle = "Save changes"
     static let accountInformationViewChangePhoto = "Change photo"
     static let accountInformationViewChangePassword = "Change password"
+    static let accountInformationBackButton = "Back"
+    static let accountInformationCancelButton = "Cancel"
+    static let accountInformationYesButton = "Yes"
+    
+    //ChangePasswordView
+    static let changePasswordViewTitle = "Create new password"
+    static let changePasswordViewSubtitle = "Your new password must be different from the previous used password"
+    static let changePasswordViewPassword = "Password"
+    static let changePasswordViewConfirmPassword = "Confirm password"
+    static let changePasswordViewResetPassword = "Reset password"
+//    static let changePasswordView
+//    static let changePasswordView
+//    static let changePasswordView
+//    static let changePasswordView
+//    static let changePasswordView
 }

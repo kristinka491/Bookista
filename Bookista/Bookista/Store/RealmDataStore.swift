@@ -77,6 +77,18 @@ class RealmDataStore {
             }
         }
     }
+    
+    func isChangedPassword(with newPassword: String) -> Bool {
+        if let user = getCurrentUser() {
+            if user.password != newPassword {
+                try? realm?.write {
+                    user.password = newPassword
+                }
+                return true
+            }
+        }
+        return false
+    }
 
     private func saveObject(user: User) {
         try? realm?.write {
@@ -84,5 +96,4 @@ class RealmDataStore {
         }
         print("Data Was Saved To Realm Database.")
     }
-    
 }

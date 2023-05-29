@@ -16,6 +16,11 @@
 		3E5D32632A123FB8007BB1D1 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D32622A123FB8007BB1D1 /* SettingsViewModel.swift */; };
 		3E5D32652A124016007BB1D1 /* TabbarItemEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D32642A124016007BB1D1 /* TabbarItemEnum.swift */; };
 		3E61D4252A1B5CF4003CC7C3 /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E61D4242A1B5CF4003CC7C3 /* Image+Extension.swift */; };
+		3E61D4282A1E3471003CC7C3 /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E61D4272A1E3471003CC7C3 /* ChangePasswordView.swift */; };
+		3E61D42A2A1E347D003CC7C3 /* ChangePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E61D4292A1E347D003CC7C3 /* ChangePasswordViewModel.swift */; };
+		3E61D42C2A1E3881003CC7C3 /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E61D42B2A1E3881003CC7C3 /* SecureTextField.swift */; };
+		3E61D42F2A1E3BAA003CC7C3 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E61D42E2A1E3BAA003CC7C3 /* PasswordTextField.swift */; };
+		3E61D4312A1E3BF4003CC7C3 /* NonSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E61D4302A1E3BF4003CC7C3 /* NonSecureTextField.swift */; };
 		3E8CCA7F2A162A2F002F59E2 /* GreetingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8CCA7E2A162A2F002F59E2 /* GreetingViewModel.swift */; };
 		3E8CCA812A1652F1002F59E2 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8CCA802A1652F1002F59E2 /* View+Extension.swift */; };
 		3EA21D1D2A138A3100797BE9 /* SettingsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA21D1C2A138A3100797BE9 /* SettingsEnum.swift */; };
@@ -81,6 +86,11 @@
 		3E5D32622A123FB8007BB1D1 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		3E5D32642A124016007BB1D1 /* TabbarItemEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarItemEnum.swift; sourceTree = "<group>"; };
 		3E61D4242A1B5CF4003CC7C3 /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
+		3E61D4272A1E3471003CC7C3 /* ChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
+		3E61D4292A1E347D003CC7C3 /* ChangePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewModel.swift; sourceTree = "<group>"; };
+		3E61D42B2A1E3881003CC7C3 /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
+		3E61D42E2A1E3BAA003CC7C3 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		3E61D4302A1E3BF4003CC7C3 /* NonSecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonSecureTextField.swift; sourceTree = "<group>"; };
 		3E8CCA7E2A162A2F002F59E2 /* GreetingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewModel.swift; sourceTree = "<group>"; };
 		3E8CCA802A1652F1002F59E2 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		3EA21D1C2A138A3100797BE9 /* SettingsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEnum.swift; sourceTree = "<group>"; };
@@ -210,6 +220,26 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		3E61D4262A1E345F003CC7C3 /* ChangePassword */ = {
+			isa = PBXGroup;
+			children = (
+				3E61D42D2A1E38F6003CC7C3 /* Reusable */,
+				3E61D4272A1E3471003CC7C3 /* ChangePasswordView.swift */,
+				3E61D4292A1E347D003CC7C3 /* ChangePasswordViewModel.swift */,
+			);
+			path = ChangePassword;
+			sourceTree = "<group>";
+		};
+		3E61D42D2A1E38F6003CC7C3 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				3E61D4302A1E3BF4003CC7C3 /* NonSecureTextField.swift */,
+				3E61D42B2A1E3881003CC7C3 /* SecureTextField.swift */,
+				3E61D42E2A1E3BAA003CC7C3 /* PasswordTextField.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
 		3EA21D222A138EFF00797BE9 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -309,6 +339,7 @@
 				3E5D32582A123DFF007BB1D1 /* Bookshelf */,
 				3E5D32592A123ECD007BB1D1 /* Settings */,
 				3EA21D232A13A0F900797BE9 /* AccountInformation */,
+				3E61D4262A1E345F003CC7C3 /* ChangePassword */,
 				3EA21D242A13A10500797BE9 /* Notifications */,
 				3EA21D252A13A11200797BE9 /* PaymentMethods */,
 				3EA21D262A13A12100797BE9 /* Appearance */,
@@ -377,9 +408,9 @@
 		3EB6B53A29ED4C8500CBFD0D /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				3EB6B53F29ED4CB800CBFD0D /* Model */,
 				3EC0626B2A1786C800C64A99 /* LocalManager.swift */,
 				3EB6B54129ED4CE200CBFD0D /* RealmDataStore.swift */,
-				3EB6B53F29ED4CB800CBFD0D /* Model */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -658,6 +689,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E5D325B2A123F7F007BB1D1 /* HomeViewModel.swift in Sources */,
+				3E61D4282A1E3471003CC7C3 /* ChangePasswordView.swift in Sources */,
 				3EB6B60029EE8AF700CBFD0D /* UIFont+Extension.swift in Sources */,
 				3EA21D212A138E2000797BE9 /* SettingCell.swift in Sources */,
 				3EA21D2E2A13A16600797BE9 /* AccountInformationView.swift in Sources */,
@@ -677,19 +709,23 @@
 				3E5D325F2A123F9A007BB1D1 /* BookshelfViewModel.swift in Sources */,
 				3E5D32572A123DF3007BB1D1 /* TabBarViewModel.swift in Sources */,
 				3EB6B53729ED4C4F00CBFD0D /* SignUpView.swift in Sources */,
+				3E61D4312A1E3BF4003CC7C3 /* NonSecureTextField.swift in Sources */,
 				3EB6B60329EE8CB300CBFD0D /* UIColor+Extension.swift in Sources */,
 				3EC0626C2A1786C800C64A99 /* LocalManager.swift in Sources */,
 				3EA21D2C2A13A15500797BE9 /* NotificationsView.swift in Sources */,
 				3E8CCA7F2A162A2F002F59E2 /* GreetingViewModel.swift in Sources */,
+				3E61D42A2A1E347D003CC7C3 /* ChangePasswordViewModel.swift in Sources */,
 				3EA21D1D2A138A3100797BE9 /* SettingsEnum.swift in Sources */,
 				3E5D32632A123FB8007BB1D1 /* SettingsViewModel.swift in Sources */,
 				3E5D325D2A123F92007BB1D1 /* BookshelfView.swift in Sources */,
 				3EA21D2A2A13A14600797BE9 /* PaymentMethodsView.swift in Sources */,
+				3E61D42F2A1E3BAA003CC7C3 /* PasswordTextField.swift in Sources */,
 				3E5D32552A123DE7007BB1D1 /* TabbarView.swift in Sources */,
 				3EB6B53E29ED4CA900CBFD0D /* DataError.swift in Sources */,
 				3EB6B53C29ED4C9800CBFD0D /* StringConstants.swift in Sources */,
 				3EB6B53529ED4C4100CBFD0D /* LoginViewModel.swift in Sources */,
 				3EA21D312A13A4FA00797BE9 /* PurchasesView.swift in Sources */,
+				3E61D42C2A1E3881003CC7C3 /* SecureTextField.swift in Sources */,
 				3E5D32612A123FAF007BB1D1 /* SettingsView.swift in Sources */,
 				3EB6B54229ED4CE200CBFD0D /* RealmDataStore.swift in Sources */,
 				3E5D32652A124016007BB1D1 /* TabbarItemEnum.swift in Sources */,

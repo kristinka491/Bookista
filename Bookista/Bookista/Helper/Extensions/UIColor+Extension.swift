@@ -18,6 +18,8 @@ extension Color {
     static let disableButtonColor = Color.hexStringToColor(hex: "F28FC1")
     static let tabbarItemColor = Color.hexStringToColor(hex: "E7388A")
     static let backgroundColor = Color.hexStringToColor(hex: "FFF6EA")
+    static let disabledButtonColor = Color.hexStringToColor(hex: "#EFC3D8")
+    static let disabledTextFieldColor = Color.hexStringToColor(hex: "#F8F3EF")
     
     static func hexStringToColor(hex: String) -> Color {
         var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()

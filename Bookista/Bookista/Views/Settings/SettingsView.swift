@@ -13,7 +13,7 @@ struct SettingsView: View {
    
     var body: some View {
         NavigationView {
-            ZStack() {
+            ZStack {
                 Color.backgroundColor
                     .ignoresSafeArea()
                 
@@ -58,6 +58,9 @@ struct SettingsView: View {
                         .padding(.horizontal, 20)
                     }
                 }
+            }
+            .onAppear {
+                tabViewModel.isHiddenTabBar = false
             }
         }
     }
