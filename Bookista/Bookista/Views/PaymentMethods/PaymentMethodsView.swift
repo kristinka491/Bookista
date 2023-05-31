@@ -14,6 +14,14 @@ struct PaymentMethodsView: View {
         ZStack() {
             Color.backgroundColor
                 .ignoresSafeArea()
+            
+            VStack(spacing: 0) {
+                TitleView(text: StringConstants.paymentMethodsViewTitle)
+                
+                ScrollView(showsIndicators: false) {
+                    
+                }
+            }
         }
         .onAppear {
             tabViewModel.isHiddenTabBar = true

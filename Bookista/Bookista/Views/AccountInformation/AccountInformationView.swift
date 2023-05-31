@@ -53,12 +53,7 @@ struct AccountInformationView: View {
                 }
                 
                 ScrollView(showsIndicators: false) {
-                    Text(StringConstants.accountInformationViewTitle)
-                        .foregroundColor(.mainColor)
-                        .font(.poppins(.regular, size: 30))
-                        .padding(.top, 30)
-                        .padding(.bottom, 30)
-                        .padding(.horizontal, 20)
+                    TitleView(text: StringConstants.accountInformationViewTitle)
                     
                     if let image = viewModel.selectedImage {
                         Image(uiImage: image)

@@ -63,7 +63,7 @@ struct SignUpView: View {
                     })
                     .padding(.horizontal, 30)
                     .padding(.vertical, 10)
-                    .background(viewModel.isValid ? Color.mainColor : Color.disableButtonColor)
+                    .background(viewModel.isValid ? Color.mainColor : Color.disabledButtonColor)
                     .cornerRadius(10)
                     .disabled(!viewModel.isValid)
                 }

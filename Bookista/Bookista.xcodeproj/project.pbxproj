@@ -72,6 +72,10 @@
 		3EB6B61129F14B2300CBFD0D /* UIApplication+Extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6B61029F14B2300CBFD0D /* UIApplication+Extension .swift */; };
 		3EC062692A1760FC00C64A99 /* AccountInformationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC062682A1760FC00C64A99 /* AccountInformationViewModel.swift */; };
 		3EC0626C2A1786C800C64A99 /* LocalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC0626B2A1786C800C64A99 /* LocalManager.swift */; };
+		3EE17D6D2A24CB800093E0A7 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE17D6C2A24CB800093E0A7 /* TitleView.swift */; };
+		3EE17D702A24CC7B0093E0A7 /* AddCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE17D6F2A24CC7B0093E0A7 /* AddCardView.swift */; };
+		3EE17D722A24CC840093E0A7 /* AddCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE17D712A24CC840093E0A7 /* AddCardViewModel.swift */; };
+		3EE17D752A24DF330093E0A7 /* AddNewCardTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE17D742A24DF330093E0A7 /* AddNewCardTextField.swift */; };
 		DB17D8E91FCA30A902B6F1D1 /* Pods_Bookista.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DC825E78B7374A0C4C527F /* Pods_Bookista.framework */; };
 /* End PBXBuildFile section */
 
@@ -166,6 +170,10 @@
 		3EB6B61029F14B2300CBFD0D /* UIApplication+Extension .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension .swift"; sourceTree = "<group>"; };
 		3EC062682A1760FC00C64A99 /* AccountInformationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInformationViewModel.swift; sourceTree = "<group>"; };
 		3EC0626B2A1786C800C64A99 /* LocalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalManager.swift; sourceTree = "<group>"; };
+		3EE17D6C2A24CB800093E0A7 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		3EE17D6F2A24CC7B0093E0A7 /* AddCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardView.swift; sourceTree = "<group>"; };
+		3EE17D712A24CC840093E0A7 /* AddCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewModel.swift; sourceTree = "<group>"; };
+		3EE17D742A24DF330093E0A7 /* AddNewCardTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCardTextField.swift; sourceTree = "<group>"; };
 		D0DC825E78B7374A0C4C527F /* Pods_Bookista.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bookista.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB2B70657729C4F7C42916B9 /* Pods-Bookista.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bookista.debug.xcconfig"; path = "Target Support Files/Pods-Bookista/Pods-Bookista.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -342,6 +350,7 @@
 				3E61D4262A1E345F003CC7C3 /* ChangePassword */,
 				3EA21D242A13A10500797BE9 /* Notifications */,
 				3EA21D252A13A11200797BE9 /* PaymentMethods */,
+				3EE17D6E2A24CC610093E0A7 /* AddCard */,
 				3EA21D262A13A12100797BE9 /* Appearance */,
 				3EA21D2F2A13A4E900797BE9 /* Purchases */,
 				3EB6B60429EFF1F300CBFD0D /* Reusable */,
@@ -530,6 +539,7 @@
 			isa = PBXGroup;
 			children = (
 				3EB6B60529EFF20D00CBFD0D /* AuthorizationTextField.swift */,
+				3EE17D6C2A24CB800093E0A7 /* TitleView.swift */,
 			);
 			path = Reusable;
 			sourceTree = "<group>";
@@ -541,6 +551,24 @@
 				3E5D325A2A123F7F007BB1D1 /* HomeViewModel.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		3EE17D6E2A24CC610093E0A7 /* AddCard */ = {
+			isa = PBXGroup;
+			children = (
+				3EE17D732A24DF100093E0A7 /* Reusable */,
+				3EE17D6F2A24CC7B0093E0A7 /* AddCardView.swift */,
+				3EE17D712A24CC840093E0A7 /* AddCardViewModel.swift */,
+			);
+			path = AddCard;
+			sourceTree = "<group>";
+		};
+		3EE17D732A24DF100093E0A7 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				3EE17D742A24DF330093E0A7 /* AddNewCardTextField.swift */,
+			);
+			path = Reusable;
 			sourceTree = "<group>";
 		};
 		5BC68C75E9FF9A521E032392 /* Pods */ = {
@@ -694,7 +722,9 @@
 				3EA21D212A138E2000797BE9 /* SettingCell.swift in Sources */,
 				3EA21D2E2A13A16600797BE9 /* AccountInformationView.swift in Sources */,
 				3EB6B60629EFF20D00CBFD0D /* AuthorizationTextField.swift in Sources */,
+				3EE17D702A24CC7B0093E0A7 /* AddCardView.swift in Sources */,
 				3EC062692A1760FC00C64A99 /* AccountInformationViewModel.swift in Sources */,
+				3EE17D722A24CC840093E0A7 /* AddCardViewModel.swift in Sources */,
 				3EA21D282A13A13200797BE9 /* AppearanceView.swift in Sources */,
 				3EB6B53329ED4C3600CBFD0D /* LoginView.swift in Sources */,
 				3EB6B60C29F1215500CBFD0D /* User.swift in Sources */,
@@ -705,6 +735,7 @@
 				3EB6B51429ED49CB00CBFD0D /* BookistaApp.swift in Sources */,
 				3EB6B52D29ED4BB800CBFD0D /* GreetingView.swift in Sources */,
 				3EB6B54429ED4CF300CBFD0D /* NetworkManager.swift in Sources */,
+				3EE17D6D2A24CB800093E0A7 /* TitleView.swift in Sources */,
 				3EB6B53929ED4C5900CBFD0D /* SignUpViewModel.swift in Sources */,
 				3E5D325F2A123F9A007BB1D1 /* BookshelfViewModel.swift in Sources */,
 				3E5D32572A123DF3007BB1D1 /* TabBarViewModel.swift in Sources */,
@@ -723,6 +754,7 @@
 				3E5D32552A123DE7007BB1D1 /* TabbarView.swift in Sources */,
 				3EB6B53E29ED4CA900CBFD0D /* DataError.swift in Sources */,
 				3EB6B53C29ED4C9800CBFD0D /* StringConstants.swift in Sources */,
+				3EE17D752A24DF330093E0A7 /* AddNewCardTextField.swift in Sources */,
 				3EB6B53529ED4C4100CBFD0D /* LoginViewModel.swift in Sources */,
 				3EA21D312A13A4FA00797BE9 /* PurchasesView.swift in Sources */,
 				3E61D42C2A1E3881003CC7C3 /* SecureTextField.swift in Sources */,

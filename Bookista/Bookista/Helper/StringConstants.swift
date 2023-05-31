@@ -73,9 +73,22 @@ struct StringConstants {
     static let changePasswordViewPassword = "Password"
     static let changePasswordViewConfirmPassword = "Confirm password"
     static let changePasswordViewResetPassword = "Reset password"
-//    static let changePasswordView
-//    static let changePasswordView
-//    static let changePasswordView
-//    static let changePasswordView
-//    static let changePasswordView
+    
+    //PaymentMethodsView
+    static let paymentMethodsViewTitle = "Payment Methods"
+//    static let paymentMethodsView
+//    static let paymentMethodsView
+//    static let paymentMethodsView
+//    static let paymentMethodsView
+//    static let paymentMethodsView
+//    static let paymentMethodsView
+//    static let paymentMethodsView
+    
+    //AddCardView
+    static let addCardViewTitle = "Add new card"
+    static let addCardViewCardNumber = "Card number"
+    static let addCardViewName = "Name on card"
+    static let addCardViewExpirationDate = "Expiration date"
+    static let addCardViewCVV = "CVV"
+    static let addCardViewSaveCardButton = "Save card"
 }
