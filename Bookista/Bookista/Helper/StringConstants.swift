@@ -17,6 +17,8 @@ struct StringConstants {
     static let theSamePasswordTitle = "Something went wrong"
     static let theSamePasswordMessage = "New password must be different from the previous used password"
     static let saveWithoutChangesTitle = "Are you sure you want to leave this page without saving?"
+    static let cardNotSavedTitle = "Please try again"
+    static let cardNotSavedMessage = "The card was not saved"
    
     //GetStartedView
     static let getStartedViewTitle = "Find Your Next"
@@ -76,7 +78,7 @@ struct StringConstants {
     
     //PaymentMethodsView
     static let paymentMethodsViewTitle = "Payment Methods"
-//    static let paymentMethodsView
+    static let paymentMethodsViewAddButtonTitle = "Add new card"
 //    static let paymentMethodsView
 //    static let paymentMethodsView
 //    static let paymentMethodsView

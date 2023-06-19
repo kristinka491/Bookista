@@ -106,14 +106,7 @@ struct AccountInformationView: View {
                         viewModel.updateProfile()
                         dismiss()
                     }, label: {
-                        Text(StringConstants.accountInformationViewSaveChangesButtonTitle)
-                            .frame(maxWidth: .infinity)
-                            .foregroundColor(.white)
-                            .font(.poppins(.regular, size: 15))
-                            .padding(.vertical, 13)
-                            .background(viewModel.isChanged ? Color.mainColor : Color.disabledButtonColor)
-                            .cornerRadius(10)
-                            .padding(.all, 20)
+                        ButtonViewText(text: StringConstants.accountInformationViewSaveChangesButtonTitle, isDisabled: viewModel.isChanged)
                     })
                     .disabled(!viewModel.isChanged)
                     

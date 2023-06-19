@@ -58,6 +58,7 @@ struct SettingsView: View {
                         .padding(.horizontal, 20)
                     }
                 }
+                .padding(.bottom, 60)
             }
             .onAppear {
                 tabViewModel.isHiddenTabBar = false

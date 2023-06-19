@@ -14,11 +14,20 @@ class AddCardViewModel: ObservableObject {
     @Published var CVV: String = ""
     @Published var expirationDate: String = ""
     @Published var isNotEmpty = false
+    @Published var isShowError = false
     
     private var publishers = Set<AnyCancellable>()
+    private var realmDataStore = RealmDataStore.shared
 
     init() {
         isTextFieldsAreNotEmpty()
+    }
+    
+    func addUserCard() {
+        let isUserCardSaved = realmDataStore.addUserCard(cardNumber: cardNumber, nameOnCard: nameOnCard, expirationDate: expirationDate, CVV: CVV)
+        if !isUserCardSaved {
+            isShowError = true
+        }
     }
     
     private func isTextFieldsAreNotEmpty() {

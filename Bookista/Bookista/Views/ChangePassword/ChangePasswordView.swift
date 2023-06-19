@@ -68,14 +68,7 @@ struct ChangePasswordView: View {
                         dismiss()
                     }
                 }, label: {
-                    Text(StringConstants.accountInformationViewSaveChangesButtonTitle)
-                        .frame(maxWidth: .infinity)
-                        .foregroundColor(.white)
-                        .font(.poppins(.regular, size: 15))
-                        .padding(.vertical, 13)
-                        .background(viewModel.isConfirmed ? Color.mainColor : Color.disabledButtonColor)
-                        .cornerRadius(10)
-                        .padding(.all, 20)
+                    ButtonViewText(text: StringConstants.accountInformationViewSaveChangesButtonTitle, isDisabled: viewModel.isConfirmed)
                 })
                 .disabled(!viewModel.isConfirmed)
                 .alert(DataError.theSamepassword.title, isPresented: $viewModel.isShowTheSamePasswordError) {

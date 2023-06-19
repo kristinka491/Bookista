@@ -14,4 +14,5 @@ class User: Object, ObjectKeyIdentifiable {
     @Persisted var password = ""
     @Persisted var lastName = ""
     @Persisted var imageUrl: String?
+    @Persisted var cards: List<UserCard>
 }

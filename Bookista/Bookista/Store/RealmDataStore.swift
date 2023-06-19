@@ -30,6 +30,25 @@ class RealmDataStore {
         return false
     }
     
+    func addUserCard(cardNumber: String,
+                     nameOnCard: String,
+                     expirationDate: String,
+                     CVV: String) -> Bool {
+           if let currentUser = getCurrentUser() {
+                let userCard = UserCard()
+                try? realm?.write {
+                    userCard.cardNumber = cardNumber
+                    userCard.nameOnCard = nameOnCard
+                    userCard.expirationDate = expirationDate
+                    userCard.CVV = CVV
+
+                    currentUser.cards.append(userCard)
+                }
+                return true
+            }
+            return false
+        }
+    
     func getUser(email: String, password: String) -> User? {
         if let user = getUser(with: email),
            user.password == password {
@@ -60,6 +79,15 @@ class RealmDataStore {
                                     forPrimaryKey: login) {
             try? realm?.write {
                 realm?.delete(user)
+            }
+        }
+    }
+    
+    func deleteUserCard(with cardNumber: String) {
+        if let userCard = realm?.object(ofType: UserCard.self,
+                                        forPrimaryKey: cardNumber) {
+            try? realm?.write {
+                realm?.delete(userCard)
             }
         }
     }

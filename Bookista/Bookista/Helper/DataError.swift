@@ -11,6 +11,7 @@ enum DataError {
     case wrongUsernameOrPassword
     case userIsRegistered
     case theSamepassword
+    case cardNotSaved
 
     var title: String {
         switch self {
@@ -20,6 +21,8 @@ enum DataError {
             return StringConstants.userIsRegisteredTitle
         case .theSamepassword:
             return StringConstants.theSamePasswordTitle
+        case .cardNotSaved:
+            return StringConstants.cardNotSavedTitle
         }
     }
 
@@ -31,6 +34,8 @@ enum DataError {
             return StringConstants.userIsRegisteredMessage
         case .theSamepassword:
             return StringConstants.theSamePasswordMessage
+        case .cardNotSaved:
+            return StringConstants.cardNotSavedMessage
         }
     }
 }

@@ -19,6 +19,10 @@ extension Color {
     static let backgroundColor = Color.hexStringToColor(hex: "FFF6EA")
     static let disabledButtonColor = Color.hexStringToColor(hex: "#EFC3D8")
     static let disabledTextFieldColor = Color.hexStringToColor(hex: "#F8F3EF")
+    static let firstCardBackgroundColor = Color.hexStringToColor(hex: "E4D9D7") 
+    static let secondCardBakgroundColor = Color.hexStringToColor(hex: "E0D2D1")
+    static let thirdCardBackgroundColor = Color.hexStringToColor(hex: "F5D5D2")
+    static let fourthCardBackgroundColor = Color.hexStringToColor(hex: "EAD0D6")
     
     static func hexStringToColor(hex: String) -> Color {
         var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()

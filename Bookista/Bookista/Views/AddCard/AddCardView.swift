@@ -10,21 +10,22 @@ import Combine
 
 struct AddCardView: View {
     @StateObject var viewModel = AddCardViewModel()
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         ZStack {
             Color.backgroundColor
                 .ignoresSafeArea()
             
-            VStack(spacing: 0) {
-                TitleView(text: StringConstants.addCardViewTitle)
+            ScrollView(showsIndicators: false) {
+                VStack(spacing: 0) {
+                    TitleView(text: StringConstants.addCardViewTitle)
+                    
+                    Image("CardsImage")
+                        .resizable()
+                        .frame(width: 250, height: 200)
+                        .padding(.bottom, 20)
                 
-                Image("CardsImage")
-                    .resizable()
-                    .frame(width: 250, height: 200)
-                    .padding(.bottom, 20)
-                
-                ScrollView(showsIndicators: false) {
                     AddNewCardTextField(textFieldText: $viewModel.cardNumber, text: StringConstants.addCardViewCardNumber)
                         .keyboardType(.numberPad)
                         .onChange(of: viewModel.cardNumber) { newValue in
@@ -75,17 +76,10 @@ struct AddCardView: View {
                     }
                     
                     Button(action: {
-                        
+                        viewModel.addUserCard()
+                        dismiss()
                     }, label: {
-                        Text(StringConstants.accountInformationViewSaveChangesButtonTitle)
-                            .frame(maxWidth: .infinity)
-                            .foregroundColor(.white)
-                            .font(.poppins(.regular, size: 15))
-                            .padding(.vertical, 13)
-                            .background(viewModel.isNotEmpty ?
-                                Color.mainColor: Color.disabledButtonColor)
-                            .cornerRadius(10)
-                            .padding(.all, 20)
+                        ButtonViewText(text: StringConstants.addCardViewSaveCardButton, isDisabled: viewModel.isNotEmpty)
                     })
                 }
             }
@@ -93,26 +87,30 @@ struct AddCardView: View {
                 UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
             }
         }
+        .alert(DataError.cardNotSaved.title, isPresented: $viewModel.isShowError) {
+        } message: {
+            Text(DataError.cardNotSaved.message)
+        }
     }
     
     private func formatText(_ text: String) -> String {
-            let trimmedText = text.replacingOccurrences(of: " ", with: "")
-            let chunkSize = 4
-            var formattedText = ""
+        let trimmedText = text.replacingOccurrences(of: " ", with: "")
+        let chunkSize = 4
+        var formattedText = ""
 
-            for index in stride(from: 0, to: trimmedText.count, by: chunkSize) {
-                let startIndex = trimmedText.index(trimmedText.startIndex, offsetBy: index)
-                let endIndex = trimmedText.index(startIndex, offsetBy: min(chunkSize, trimmedText.count - index))
-                let chunk = trimmedText[startIndex..<endIndex]
-                formattedText += "\(chunk) "
-            }
-
-            if formattedText.last == " " {
-                formattedText.removeLast()
-            }
-
-            return formattedText
+        for index in stride(from: 0, to: trimmedText.count, by: chunkSize) {
+            let startIndex = trimmedText.index(trimmedText.startIndex, offsetBy: index)
+            let endIndex = trimmedText.index(startIndex, offsetBy: min(chunkSize, trimmedText.count - index))
+            let chunk = trimmedText[startIndex..<endIndex]
+            formattedText += "\(chunk) "
         }
+
+        if formattedText.last == " " {
+            formattedText.removeLast()
+        }
+
+        return formattedText
+    }
 }
 
 struct AddCardView_Previews: PreviewProvider {

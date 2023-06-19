@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E01A3B82A28B2F600528A7B /* PaymentMethodsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E01A3B72A28B2F600528A7B /* PaymentMethodsViewModel.swift */; };
+		3E01A3BA2A28B33E00528A7B /* UserCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E01A3B92A28B33E00528A7B /* UserCard.swift */; };
 		3E5D32552A123DE7007BB1D1 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D32542A123DE7007BB1D1 /* TabbarView.swift */; };
 		3E5D32572A123DF3007BB1D1 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D32562A123DF3007BB1D1 /* TabBarViewModel.swift */; };
 		3E5D325B2A123F7F007BB1D1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D325A2A123F7F007BB1D1 /* HomeViewModel.swift */; };
@@ -23,6 +25,8 @@
 		3E61D4312A1E3BF4003CC7C3 /* NonSecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E61D4302A1E3BF4003CC7C3 /* NonSecureTextField.swift */; };
 		3E8CCA7F2A162A2F002F59E2 /* GreetingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8CCA7E2A162A2F002F59E2 /* GreetingViewModel.swift */; };
 		3E8CCA812A1652F1002F59E2 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8CCA802A1652F1002F59E2 /* View+Extension.swift */; };
+		3E954EBA2A2F479C006E55EB /* ButtonViewText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E954EB92A2F479C006E55EB /* ButtonViewText.swift */; };
+		3E954EBC2A2F53CA006E55EB /* RealmCollection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E954EBB2A2F53CA006E55EB /* RealmCollection+Extension.swift */; };
 		3EA21D1D2A138A3100797BE9 /* SettingsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA21D1C2A138A3100797BE9 /* SettingsEnum.swift */; };
 		3EA21D212A138E2000797BE9 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA21D202A138E2000797BE9 /* SettingCell.swift */; };
 		3EA21D282A13A13200797BE9 /* AppearanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA21D272A13A13200797BE9 /* AppearanceView.swift */; };
@@ -81,6 +85,8 @@
 
 /* Begin PBXFileReference section */
 		3D18B1F7974C033D62A87347 /* Pods-Bookista.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bookista.release.xcconfig"; path = "Target Support Files/Pods-Bookista/Pods-Bookista.release.xcconfig"; sourceTree = "<group>"; };
+		3E01A3B72A28B2F600528A7B /* PaymentMethodsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodsViewModel.swift; sourceTree = "<group>"; };
+		3E01A3B92A28B33E00528A7B /* UserCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCard.swift; sourceTree = "<group>"; };
 		3E5D32542A123DE7007BB1D1 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		3E5D32562A123DF3007BB1D1 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
 		3E5D325A2A123F7F007BB1D1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -97,6 +103,8 @@
 		3E61D4302A1E3BF4003CC7C3 /* NonSecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonSecureTextField.swift; sourceTree = "<group>"; };
 		3E8CCA7E2A162A2F002F59E2 /* GreetingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewModel.swift; sourceTree = "<group>"; };
 		3E8CCA802A1652F1002F59E2 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		3E954EB92A2F479C006E55EB /* ButtonViewText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewText.swift; sourceTree = "<group>"; };
+		3E954EBB2A2F53CA006E55EB /* RealmCollection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealmCollection+Extension.swift"; sourceTree = "<group>"; };
 		3EA21D1C2A138A3100797BE9 /* SettingsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEnum.swift; sourceTree = "<group>"; };
 		3EA21D202A138E2000797BE9 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		3EA21D272A13A13200797BE9 /* AppearanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceView.swift; sourceTree = "<group>"; };
@@ -277,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				3EA21D292A13A14600797BE9 /* PaymentMethodsView.swift */,
+				3E01A3B72A28B2F600528A7B /* PaymentMethodsViewModel.swift */,
 			);
 			path = PaymentMethods;
 			sourceTree = "<group>";
@@ -428,6 +437,7 @@
 			isa = PBXGroup;
 			children = (
 				3EB6B60B29F1215500CBFD0D /* User.swift */,
+				3E01A3B92A28B33E00528A7B /* UserCard.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -531,6 +541,7 @@
 				3EB6B61029F14B2300CBFD0D /* UIApplication+Extension .swift */,
 				3E8CCA802A1652F1002F59E2 /* View+Extension.swift */,
 				3E61D4242A1B5CF4003CC7C3 /* Image+Extension.swift */,
+				3E954EBB2A2F53CA006E55EB /* RealmCollection+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -540,6 +551,7 @@
 			children = (
 				3EB6B60529EFF20D00CBFD0D /* AuthorizationTextField.swift */,
 				3EE17D6C2A24CB800093E0A7 /* TitleView.swift */,
+				3E954EB92A2F479C006E55EB /* ButtonViewText.swift */,
 			);
 			path = Reusable;
 			sourceTree = "<group>";
@@ -718,10 +730,13 @@
 			files = (
 				3E5D325B2A123F7F007BB1D1 /* HomeViewModel.swift in Sources */,
 				3E61D4282A1E3471003CC7C3 /* ChangePasswordView.swift in Sources */,
+				3E954EBA2A2F479C006E55EB /* ButtonViewText.swift in Sources */,
+				3E01A3B82A28B2F600528A7B /* PaymentMethodsViewModel.swift in Sources */,
 				3EB6B60029EE8AF700CBFD0D /* UIFont+Extension.swift in Sources */,
 				3EA21D212A138E2000797BE9 /* SettingCell.swift in Sources */,
 				3EA21D2E2A13A16600797BE9 /* AccountInformationView.swift in Sources */,
 				3EB6B60629EFF20D00CBFD0D /* AuthorizationTextField.swift in Sources */,
+				3E954EBC2A2F53CA006E55EB /* RealmCollection+Extension.swift in Sources */,
 				3EE17D702A24CC7B0093E0A7 /* AddCardView.swift in Sources */,
 				3EC062692A1760FC00C64A99 /* AccountInformationViewModel.swift in Sources */,
 				3EE17D722A24CC840093E0A7 /* AddCardViewModel.swift in Sources */,
@@ -761,6 +776,7 @@
 				3E5D32612A123FAF007BB1D1 /* SettingsView.swift in Sources */,
 				3EB6B54229ED4CE200CBFD0D /* RealmDataStore.swift in Sources */,
 				3E5D32652A124016007BB1D1 /* TabbarItemEnum.swift in Sources */,
+				3E01A3BA2A28B33E00528A7B /* UserCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
